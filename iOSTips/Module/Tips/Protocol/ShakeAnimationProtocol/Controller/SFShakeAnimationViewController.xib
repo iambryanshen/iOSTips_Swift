@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFShakeAnimationViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="wL3-dG-BLc" id="7o3-rP-wdk"/>
+                <outlet property="passwordTextField" destination="dim-6j-niX" id="hhx-7L-Kuc"/>
+                <outlet property="tipLabel" destination="f71-i6-Meb" id="BCF-Q3-Unb"/>
+                <outlet property="usernameTextField" destination="rJg-On-tep" id="Rg8-lh-Pmo"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nfC-Lg-wLn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-dG-BLc">
+                    <rect key="frame" x="87" y="327" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="It7-ke-KuP"/>
+                        <constraint firstAttribute="width" constant="200" id="TGa-uj-5p8"/>
+                    </constraints>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginButtonClick:" destination="-1" eventType="touchUpInside" id="exj-HU-wD4"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJg-On-tep">
+                    <rect key="frame" x="87" y="216" width="200" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dim-6j-niX">
+                    <rect key="frame" x="87" y="256" width="200" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请重新输入用户名和密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f71-i6-Meb">
+                    <rect key="frame" x="91.5" y="296" width="191" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.50727022028170798" green="0.7133624184751346" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dim-6j-niX" firstAttribute="width" secondItem="wL3-dG-BLc" secondAttribute="width" id="2OW-EV-FZ1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wL3-dG-BLc" secondAttribute="bottom" constant="300" id="JH1-p4-LE9"/>
+                <constraint firstItem="rJg-On-tep" firstAttribute="width" secondItem="wL3-dG-BLc" secondAttribute="width" id="O3T-12-hUt"/>
+                <constraint firstItem="dim-6j-niX" firstAttribute="top" secondItem="rJg-On-tep" secondAttribute="bottom" constant="10" id="XMc-QZ-Xoz"/>
+                <constraint firstItem="f71-i6-Meb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZVv-r0-gvu"/>
+                <constraint firstItem="rJg-On-tep" firstAttribute="centerX" secondItem="wL3-dG-BLc" secondAttribute="centerX" id="dxG-eB-omA"/>
+                <constraint firstItem="wL3-dG-BLc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f5f-Z8-diU"/>
+                <constraint firstItem="dim-6j-niX" firstAttribute="centerX" secondItem="wL3-dG-BLc" secondAttribute="centerX" id="mTb-dt-UlT"/>
+                <constraint firstItem="wL3-dG-BLc" firstAttribute="top" secondItem="f71-i6-Meb" secondAttribute="bottom" constant="10" id="omy-3U-GSY"/>
+                <constraint firstItem="f71-i6-Meb" firstAttribute="top" secondItem="dim-6j-niX" secondAttribute="bottom" constant="10" id="wnU-Ar-mG6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

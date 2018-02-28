@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationTitleView" customModule="iOSTips" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4e-e9-a8e">
+                    <rect key="frame" x="0.0" y="0.0" width="172.5" height="91"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="tjO-8t-ZEg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-5W-aUu">
+                    <rect key="frame" x="202.5" y="0.0" width="172.5" height="91"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="OUX-6a-yNz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6CK-5W-aUu" firstAttribute="leading" secondItem="h4e-e9-a8e" secondAttribute="trailing" constant="30" id="0ol-E1-hDy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6CK-5W-aUu" secondAttribute="bottom" id="1kC-am-ZUa"/>
+                <constraint firstItem="h4e-e9-a8e" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7SI-Ay-ucS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6CK-5W-aUu" secondAttribute="trailing" id="NtX-oM-VJz"/>
+                <constraint firstItem="6CK-5W-aUu" firstAttribute="width" secondItem="h4e-e9-a8e" secondAttribute="width" id="WXU-FR-bWh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h4e-e9-a8e" secondAttribute="bottom" id="eGH-PE-mne"/>
+                <constraint firstItem="h4e-e9-a8e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gVo-4G-Wc1"/>
+                <constraint firstItem="6CK-5W-aUu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qG0-VV-7ap"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="218.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFLoginRegisterViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="cityTextField" destination="P4b-ub-JRQ" id="qnX-me-p9X"/>
+                <outlet property="countryTextField" destination="ZvM-pQ-lxw" id="0xs-rD-qpb"/>
+                <outlet property="dateTextField" destination="S8r-42-V0e" id="3RI-6Z-7AR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lr6-mE-csR">
+                    <rect key="frame" x="67.5" y="158.5" width="240" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezB-AD-6nx">
+                            <rect key="frame" x="25" y="21" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZvM-pQ-lxw" customClass="CountryTextField" customModule="注册界面" customModuleProvider="target">
+                            <rect key="frame" x="70" y="16.5" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="4xb-5q-IOZ"/>
+                                <constraint firstAttribute="width" constant="100" id="9tG-oi-780"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if9-8M-Gmu">
+                            <rect key="frame" x="24.5" y="63.5" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8r-42-V0e" customClass="DateTextField" customModule="注册界面" customModuleProvider="target">
+                            <rect key="frame" x="69.5" y="59.5" width="100" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-nT-lgt">
+                            <rect key="frame" x="25" y="107" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4b-ub-JRQ" customClass="CityTextField" customModule="注册界面" customModuleProvider="target">
+                            <rect key="frame" x="69.5" y="102.5" width="100" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZvM-pQ-lxw" firstAttribute="height" secondItem="S8r-42-V0e" secondAttribute="height" id="4lb-gi-nhq"/>
+                        <constraint firstItem="S8r-42-V0e" firstAttribute="centerY" secondItem="Lr6-mE-csR" secondAttribute="centerY" id="5Q3-wO-dnp"/>
+                        <constraint firstItem="ZvM-pQ-lxw" firstAttribute="width" secondItem="S8r-42-V0e" secondAttribute="width" id="5cx-5z-5jB"/>
+                        <constraint firstAttribute="height" constant="150" id="9aN-U8-Zvo"/>
+                        <constraint firstItem="ZvM-pQ-lxw" firstAttribute="centerX" secondItem="Lr6-mE-csR" secondAttribute="centerX" id="B3d-Oz-bQF"/>
+                        <constraint firstItem="P4b-ub-JRQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sMi-nT-lgt" secondAttribute="trailing" constant="8" symbolic="YES" id="E0p-WY-SWY"/>
+                        <constraint firstAttribute="width" constant="240" id="Fpt-WL-ldh"/>
+                        <constraint firstItem="S8r-42-V0e" firstAttribute="centerX" secondItem="Lr6-mE-csR" secondAttribute="centerX" id="HJM-a4-PJR"/>
+                        <constraint firstItem="S8r-42-V0e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="if9-8M-Gmu" secondAttribute="trailing" constant="8" symbolic="YES" id="IYw-mV-SgG"/>
+                        <constraint firstItem="sMi-nT-lgt" firstAttribute="centerY" secondItem="P4b-ub-JRQ" secondAttribute="centerY" id="JkP-oX-qqM"/>
+                        <constraint firstItem="P4b-ub-JRQ" firstAttribute="top" secondItem="S8r-42-V0e" secondAttribute="bottom" constant="13" id="L98-Wi-hRU"/>
+                        <constraint firstItem="S8r-42-V0e" firstAttribute="top" secondItem="ZvM-pQ-lxw" secondAttribute="bottom" constant="13" id="PPH-Cn-fVo"/>
+                        <constraint firstItem="P4b-ub-JRQ" firstAttribute="centerX" secondItem="Lr6-mE-csR" secondAttribute="centerX" id="SOo-US-gn4"/>
+                        <constraint firstItem="P4b-ub-JRQ" firstAttribute="height" secondItem="S8r-42-V0e" secondAttribute="height" id="TZe-Ne-mml"/>
+                        <constraint firstItem="ezB-AD-6nx" firstAttribute="leading" secondItem="Lr6-mE-csR" secondAttribute="leading" constant="25" id="WSN-GT-696"/>
+                        <constraint firstItem="if9-8M-Gmu" firstAttribute="centerY" secondItem="S8r-42-V0e" secondAttribute="centerY" id="YzD-Cg-iU4"/>
+                        <constraint firstItem="ezB-AD-6nx" firstAttribute="centerY" secondItem="ZvM-pQ-lxw" secondAttribute="centerY" id="av4-Lz-SKF"/>
+                        <constraint firstItem="ZvM-pQ-lxw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ezB-AD-6nx" secondAttribute="trailing" constant="8" symbolic="YES" id="fLq-Wh-fvG"/>
+                        <constraint firstItem="sMi-nT-lgt" firstAttribute="leading" secondItem="Lr6-mE-csR" secondAttribute="leading" constant="25" id="kYw-Nz-jC4"/>
+                        <constraint firstItem="P4b-ub-JRQ" firstAttribute="width" secondItem="S8r-42-V0e" secondAttribute="width" id="oXj-u4-2AY"/>
+                        <constraint firstItem="if9-8M-Gmu" firstAttribute="leading" secondItem="Lr6-mE-csR" secondAttribute="leading" constant="24.5" id="obg-GS-zbD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lr6-mE-csR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="TUL-iW-HIw"/>
+                <constraint firstItem="Lr6-mE-csR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fRo-Uo-X7C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

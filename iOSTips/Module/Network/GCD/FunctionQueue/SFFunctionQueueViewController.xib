@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFFunctionQueueViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="YLH-Cr-tHw" id="ccU-1g-3qU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-vi-1bt">
+                    <rect key="frame" x="96.5" y="139" width="182" height="350"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al6-3e-M9m">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="并发队列 &amp; 异步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="concurrentAsync:" destination="-1" eventType="touchUpInside" id="511-Yc-7Rd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-QK-TZk">
+                            <rect key="frame" x="0.0" y="40" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="并发队列 &amp; 同步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="concurrentSync:" destination="-1" eventType="touchUpInside" id="JmV-1z-OWg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HND-be-p1s">
+                            <rect key="frame" x="0.0" y="80" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="串行队列 &amp; 异步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="serialAsync:" destination="-1" eventType="touchUpInside" id="L2o-fp-db6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISM-V7-KZK">
+                            <rect key="frame" x="0.0" y="120" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="串行队列 &amp; 同步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="serialSync:" destination="-1" eventType="touchUpInside" id="jXQ-Pg-CE6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-yl-L8K">
+                            <rect key="frame" x="0.0" y="160" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="全局并发队列">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="globalQueue:" destination="-1" eventType="touchUpInside" id="9zQ-d5-Jpg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esL-38-Aam">
+                            <rect key="frame" x="0.0" y="200" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="主队列 &amp; 异步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="mainQueueAsync:" destination="-1" eventType="touchUpInside" id="2ry-LP-bkx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-R3-hKz">
+                            <rect key="frame" x="0.0" y="240" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="主队列 &amp; 同步函数">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="mainQueueSync:" destination="-1" eventType="touchUpInside" id="Wb5-gc-tvx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vo-uh-ijc">
+                            <rect key="frame" x="0.0" y="280" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="一次性代码（Swift3）废弃">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="once:" destination="-1" eventType="touchUpInside" id="mzA-dU-E1e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx0-vI-88k">
+                            <rect key="frame" x="0.0" y="320" width="182" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="延迟执行">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="delayExecution:" destination="-1" eventType="touchUpInside" id="0U4-Gd-FYl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ek9-QK-TZk" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="1nj-wZ-fas"/>
+                        <constraint firstItem="hZf-yl-L8K" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="SX4-5l-Qgf"/>
+                        <constraint firstItem="HND-be-p1s" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="ZCj-z8-GGC"/>
+                        <constraint firstItem="YwS-R3-hKz" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="cgh-uf-otM"/>
+                        <constraint firstItem="ISM-V7-KZK" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="kTw-P0-6Ac"/>
+                        <constraint firstItem="1Vo-uh-ijc" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="kb4-yd-oMx"/>
+                        <constraint firstItem="cx0-vI-88k" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="lV0-xi-E64"/>
+                        <constraint firstItem="esL-38-Aam" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="mdQ-fQ-MpY"/>
+                        <constraint firstItem="al6-3e-M9m" firstAttribute="centerX" secondItem="dqw-vi-1bt" secondAttribute="centerX" id="v9y-5t-qQW"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T3I-iX-8oX">
+                    <rect key="frame" x="65" y="499" width="245" height="158"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZf-1Z-71R">
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="30"/>
+                            <state key="normal" title="在子线程下载图片，在主线程更新UI"/>
+                            <connections>
+                                <action selector="threadCommunication:" destination="-1" eventType="touchUpInside" id="0sQ-9q-4a8"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-Cr-tHw">
+                            <rect key="frame" x="2.5" y="30" width="240" height="128"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="7pK-09-7Z5"/>
+                                <constraint firstAttribute="width" constant="240" id="iSX-Xb-Rhg"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YLH-Cr-tHw" secondAttribute="bottom" id="lAk-j8-ja4"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="T3I-iX-8oX" secondAttribute="bottom" constant="10" id="RYL-TA-fAo"/>
+                <constraint firstItem="T3I-iX-8oX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WDH-3D-nnr"/>
+                <constraint firstItem="dqw-vi-1bt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qaO-78-Co3"/>
+                <constraint firstItem="T3I-iX-8oX" firstAttribute="top" secondItem="dqw-vi-1bt" secondAttribute="bottom" constant="10" id="vBl-0h-biD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-97" y="-31"/>
+        </view>
+    </objects>
+</document>

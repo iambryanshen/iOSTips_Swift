@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFUserDefaultsViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="dataLabel" destination="bIf-4e-ses" id="fP2-Au-5OA"/>
+                <outlet property="preferencePathLabel" destination="cNT-IM-m5R" id="xVh-RK-alp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="22I-Gk-dRp">
+                    <rect key="frame" x="50" y="168" width="275" height="331"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5e-uL-3QV">
+                            <rect key="frame" x="76" y="0.0" width="123" height="30"/>
+                            <state key="normal" title="获取偏好设置路径"/>
+                            <connections>
+                                <action selector="getPreferencePath:" destination="-1" eventType="touchUpInside" id="1bW-yy-4U3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preference Path？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-IM-m5R">
+                            <rect key="frame" x="22.5" y="80" width="230" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="qHC-B9-tG3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv6-1J-XAq">
+                            <rect key="frame" x="68.5" y="150.5" width="138" height="30"/>
+                            <state key="normal" title="存储数据到偏好设置"/>
+                            <connections>
+                                <action selector="saveDataToPreference:" destination="-1" eventType="touchUpInside" id="V7v-US-YMc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df2-G9-gp5">
+                            <rect key="frame" x="76" y="230.5" width="123" height="30"/>
+                            <state key="normal" title="从偏好设置取数据"/>
+                            <connections>
+                                <action selector="getDataFromPreference:" destination="-1" eventType="touchUpInside" id="WKS-xu-YjQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data？？？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-4e-ses">
+                            <rect key="frame" x="22.5" y="310.5" width="230" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="fKw-e8-6Du"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="22I-Gk-dRp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="K8m-M9-Vlk"/>
+                <constraint firstItem="22I-Gk-dRp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="ZUa-gz-8au"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="22I-Gk-dRp" secondAttribute="trailing" constant="50" id="pNn-hI-dab"/>
+                <constraint firstItem="22I-Gk-dRp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pXf-ck-fjh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

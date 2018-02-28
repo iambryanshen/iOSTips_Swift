@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFDelegateViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="progressLabel" destination="L3t-w6-7nK" id="WNx-IP-gId"/>
+                <outlet property="progressView" destination="89L-vY-4Q2" id="hks-ub-PU7"/>
+                <outlet property="statusLabel" destination="DzH-W7-Hw8" id="M9K-h9-rho"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Pua-XM-X6A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bvL-Un-Sho">
+                    <rect key="frame" x="141.5" y="274" width="92" height="180"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-oX-cKd">
+                            <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="开始下载">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="startDownload:" destination="-1" eventType="touchUpInside" id="3rJ-Z8-vei"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-ka-6Uz">
+                            <rect key="frame" x="0.0" y="50" width="92" height="30"/>
+                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="暂停下载">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="suspendDownload:" destination="-1" eventType="touchUpInside" id="dgc-0e-8FG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm5-lt-zKK">
+                            <rect key="frame" x="0.0" y="100" width="92" height="30"/>
+                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="恢复暂停下载">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="resumeSuspendDownload:" destination="-1" eventType="touchUpInside" id="xfK-6V-6mQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-OK-1Rk">
+                            <rect key="frame" x="0.0" y="150" width="92" height="30"/>
+                            <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="取消下载">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelDownload:" destination="-1" eventType="touchUpInside" id="AP0-hQ-cIx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="89L-vY-4Q2">
+                    <rect key="frame" x="100" y="504" width="175" height="2"/>
+                </progressView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3yw-Cl-5nm">
+                    <rect key="frame" x="166.5" y="556" width="42" height="61"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3t-w6-7nK">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzH-W7-Hw8">
+                            <rect key="frame" x="0.0" y="40.5" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3yw-Cl-5nm" firstAttribute="top" secondItem="89L-vY-4Q2" secondAttribute="bottom" constant="50" id="8iu-Zt-ZfN"/>
+                <constraint firstItem="bvL-Un-Sho" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cjs-4U-zqk"/>
+                <constraint firstItem="89L-vY-4Q2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EWg-mc-rHS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3yw-Cl-5nm" secondAttribute="bottom" constant="50" id="Ilu-Id-5cH"/>
+                <constraint firstItem="89L-vY-4Q2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="L5i-yp-Awl"/>
+                <constraint firstAttribute="trailing" secondItem="89L-vY-4Q2" secondAttribute="trailing" constant="100" id="OJx-ud-hRU"/>
+                <constraint firstItem="3yw-Cl-5nm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UY7-dG-sXM"/>
+                <constraint firstItem="89L-vY-4Q2" firstAttribute="top" secondItem="bvL-Un-Sho" secondAttribute="bottom" constant="50" id="raZ-5C-WDE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
