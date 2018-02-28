@@ -169,6 +169,7 @@
 		D3B7DB341FE7E1C700F67EC8 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7DB331FE7E1C700F67EC8 /* UILabel-Extension.swift */; };
 		D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9461820438B7400DFBAC9 /* SFFatherChildVCViewController.swift */; };
 		D3C2FF461FE7565900C09486 /* SystemConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2FF451FE7565900C09486 /* SystemConstant.swift */; };
+		D3C4A3D52046CF6800A64F0C /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4A3D42046CF6800A64F0C /* UIImage-Extension.swift */; };
 		D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */; };
 		D3CEABAB203E5CD30054D25E /* SFUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */; };
 		D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABAE203E66C10054D25E /* SFPrint.swift */; };
@@ -367,6 +368,7 @@
 		D3B7DB331FE7E1C700F67EC8 /* UILabel-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel-Extension.swift"; sourceTree = "<group>"; };
 		D3B9461820438B7400DFBAC9 /* SFFatherChildVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFFatherChildVCViewController.swift; sourceTree = "<group>"; };
 		D3C2FF451FE7565900C09486 /* SystemConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemConstant.swift; sourceTree = "<group>"; };
+		D3C4A3D42046CF6800A64F0C /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUploadViewController.swift; sourceTree = "<group>"; };
 		D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFUploadViewController.xib; sourceTree = "<group>"; };
 		D3CEABAE203E66C10054D25E /* SFPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrint.swift; sourceTree = "<group>"; };
@@ -980,6 +982,7 @@
 				D387BA641FE593DD00048D0F /* UIColor-Extension.swift */,
 				D3B7DB331FE7E1C700F67EC8 /* UILabel-Extension.swift */,
 				D362241320440F1D0058222B /* UIDevice-Extension.swift */,
+				D3C4A3D42046CF6800A64F0C /* UIImage-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -2025,6 +2028,7 @@
 				D3DE1C8D200CBD9900EC732C /* SFModalPresentedViewController.swift in Sources */,
 				D39706D31FF3795100946BB9 /* CountryModel.swift in Sources */,
 				D3B27E8520187ADA00B5C832 /* SFLayoutGuideViewController.swift in Sources */,
+				D3C4A3D52046CF6800A64F0C /* UIImage-Extension.swift in Sources */,
 				D30904642029DCB10004B554 /* SFClosureViewController.swift in Sources */,
 				D39706E01FF3795100946BB9 /* ImageTableViewCell.swift in Sources */,
 				D39706DD1FF3795100946BB9 /* SFTableViewController.swift in Sources */,
