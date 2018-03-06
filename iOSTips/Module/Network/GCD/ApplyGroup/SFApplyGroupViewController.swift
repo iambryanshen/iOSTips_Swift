@@ -31,31 +31,34 @@ class SFApplyGroupViewController: UIViewController {
     
     /*
      * 栅栏函数的使用
-     * 注意：栅栏函数的队列不可以使用全局并发队列，使用全部并发队列，栅栏函数无效
+     * 注意：栅栏函数的队列不可以使用全局并发队列，使用全部并发队列时，栅栏函数无效
      */
-    
     @IBAction func barrier(_ sender: UIButton) {
         
         let concurrentQueue = DispatchQueue(label: "com.brian.www", qos: DispatchQoS.default, attributes: DispatchQueue.Attributes.concurrent)
         
+        // 任务1
         concurrentQueue.async {
             print("1-------", Thread.current)
         }
         
+        // 任务2
         concurrentQueue.async {
             print("2-------", Thread.current)
         }
         
+        // 栅栏函数
         let barrier = DispatchWorkItem(qos: DispatchQoS.default, flags: DispatchWorkItemFlags.barrier) {
             print("barrier-------", Thread.current)
         }
-        
         concurrentQueue.async(execute: barrier)
-        
+
+        // 任务3
         concurrentQueue.async {
             print("3-------", Thread.current)
         }
         
+        // 任务4
         concurrentQueue.async {
             print("4-------", Thread.current)
         }

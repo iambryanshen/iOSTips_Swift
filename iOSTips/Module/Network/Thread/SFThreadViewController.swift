@@ -21,6 +21,7 @@ import UIKit
     ①： start：执行start，线程会被添加到可调度线程池中，此时线程的状态为“就绪状态”。线程为“就绪状态”时，CPU只会调用可调度线程池中的线程
     ②： sleep：由“运行状态”转换为“阻塞状态”，此时线程会被移出可调度线程池。不再被CPU调度。当达到指定时间时，线程继续执行。
     ③： exit：强制退出。无论线程是什么状态，执行exit()，线程都会强制退出，线程执行的任务不再继续执行。
+ * 六. 自定义队列 Custom Thread
  */
 
 /*
@@ -142,6 +143,11 @@ class SFThreadViewController: UIViewController {
     var totalTicketCount: Int = 100
     
     //MARK: - 多条线程时防止出现安全隐患给线程加锁
+    /*
+     * Swift 通过NSLock实现加锁
+     * OC 通过@synchronized(self) { 需要被加锁的代码 }
+     * self是加锁的对象，该对象必须保证“全局”且“唯一”（保证不被重复加锁，重复加锁无意义）
+     */
     @IBAction func lockThread(_ sender: UIButton) {
         
         thread0.name = "售票员0"
@@ -170,12 +176,17 @@ class SFThreadViewController: UIViewController {
         }
     }
     
+    //MARK: - 自定义thread
     /*
-     * Swift 通过NSLock实现加锁
-     * OC 通过@synchronized(self) { 需要被加锁的代码 }
-     * self是加锁的对象，该对象必须保证“全局”且“唯一”（保证不被重复加锁，重复加锁无意义）
+     * 在自定义的线程类中重写main方法，在main方法中封装任务，可以更好的分离复用代码
      */
+    @IBAction func customThread(_ sender: UIButton) {
+        
+        let thread = SFCustomThread()
+        thread.start()
+    }
     
+    //MARK: - 实例
     @IBOutlet weak var imageView: UIImageView!
     
     @available(iOS 10.0, *)

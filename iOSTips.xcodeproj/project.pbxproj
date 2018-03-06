@@ -35,6 +35,8 @@
 		D32B97D71FF4CBDD00478265 /* SFNetworkStateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B97D61FF4CBDD00478265 /* SFNetworkStateViewController.xib */; };
 		D32DAEE420401BA500BFA18E /* SFResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32DAEE220401BA500BFA18E /* SFResponseViewController.swift */; };
 		D32DAEE520401BA500BFA18E /* SFResponseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */; };
+		D3363C33204CDBA3000C92F2 /* SFOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */; };
+		D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */; };
 		D344489320196FE7001455AC /* SFUIStackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344489120196FE7001455AC /* SFUIStackViewViewController.swift */; };
 		D344489420196FE7001455AC /* SFUIStackViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D344489220196FE7001455AC /* SFUIStackViewViewController.xib */; };
 		D356DB07202D964900514C1B /* SFAlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356DB06202D964900514C1B /* SFAlamofireViewController.swift */; };
@@ -173,6 +175,8 @@
 		D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */; };
 		D3CEABAB203E5CD30054D25E /* SFUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */; };
 		D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABAE203E66C10054D25E /* SFPrint.swift */; };
+		D3DD9727204E2C500065E9B6 /* SFCustomThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD9726204E2C500065E9B6 /* SFCustomThread.swift */; };
+		D3DD9729204E300E0065E9B6 /* SFCustomOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */; };
 		D3DE1C83200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C7E200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift */; };
 		D3DE1C85200CBA9D00EC732C /* SFPushPopAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C84200CBA9D00EC732C /* SFPushPopAnimationViewController.swift */; };
 		D3DE1C89200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C88200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift */; };
@@ -235,6 +239,8 @@
 		D32B97D61FF4CBDD00478265 /* SFNetworkStateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFNetworkStateViewController.xib; sourceTree = "<group>"; };
 		D32DAEE220401BA500BFA18E /* SFResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFResponseViewController.swift; sourceTree = "<group>"; };
 		D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFResponseViewController.xib; sourceTree = "<group>"; };
+		D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOperationViewController.swift; sourceTree = "<group>"; };
+		D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOperationViewController.xib; sourceTree = "<group>"; };
 		D344489120196FE7001455AC /* SFUIStackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUIStackViewViewController.swift; sourceTree = "<group>"; };
 		D344489220196FE7001455AC /* SFUIStackViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFUIStackViewViewController.xib; sourceTree = "<group>"; };
 		D356DB06202D964900514C1B /* SFAlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlamofireViewController.swift; sourceTree = "<group>"; };
@@ -372,6 +378,8 @@
 		D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUploadViewController.swift; sourceTree = "<group>"; };
 		D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFUploadViewController.xib; sourceTree = "<group>"; };
 		D3CEABAE203E66C10054D25E /* SFPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrint.swift; sourceTree = "<group>"; };
+		D3DD9726204E2C500065E9B6 /* SFCustomThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCustomThread.swift; sourceTree = "<group>"; };
+		D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCustomOperation.swift; sourceTree = "<group>"; };
 		D3DE1C7E200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppleMusicPushPopViewController.swift; sourceTree = "<group>"; };
 		D3DE1C84200CBA9D00EC732C /* SFPushPopAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPushPopAnimationViewController.swift; sourceTree = "<group>"; };
 		D3DE1C88200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFModalFadeInFadeOutViewController.swift; sourceTree = "<group>"; };
@@ -579,6 +587,16 @@
 				D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		D3363C30204CDB61000C92F2 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */,
+				D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */,
+				D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */,
+			);
+			path = Operation;
 			sourceTree = "<group>";
 		};
 		D344488F20196FD0001455AC /* UIStackView */ = {
@@ -881,6 +899,7 @@
 				D3616A6620414280009AE65F /* SFThreadViewController.swift */,
 				D3616A6720414280009AE65F /* SFThreadViewController.xib */,
 				D3616A6A20414DB5009AE65F /* SFThread.swift */,
+				D3DD9726204E2C500065E9B6 /* SFCustomThread.swift */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -1291,6 +1310,7 @@
 		D397069F1FF3795100946BB9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D3363C30204CDB61000C92F2 /* Operation */,
 				D36D7E782043C6FD006A9628 /* GCD */,
 				D3616A6520414274009AE65F /* Thread */,
 				D3616A6020413A32009AE65F /* Pthread */,
@@ -1897,6 +1917,7 @@
 				D30904652029DCB10004B554 /* SFClosureViewController.xib in Resources */,
 				D39706C51FF3795100946BB9 /* putaoya.gif in Resources */,
 				D39706E11FF3795100946BB9 /* ImageTableViewCell.xib in Resources */,
+				D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */,
 				D32DAEE520401BA500BFA18E /* SFResponseViewController.xib in Resources */,
 				D39706CC1FF3795100946BB9 /* faguo.gif in Resources */,
 				D3683049202C6C7800674E4F /* SFUploadSthViewController.xib in Resources */,
@@ -2008,6 +2029,7 @@
 				D35BCE222024403A00047639 /* CodeTableViewCell.swift in Sources */,
 				D3616A6320413A3F009AE65F /* SFPthreadViewController.swift in Sources */,
 				D356DB0E202D98FB00514C1B /* SFAFGetPostViewController.swift in Sources */,
+				D3363C33204CDBA3000C92F2 /* SFOperationViewController.swift in Sources */,
 				D3616A5D20410AB3009AE65F /* SFGestureViewController.swift in Sources */,
 				D39706DB1FF3795100946BB9 /* SFDefaultStatusViewController.swift in Sources */,
 				D392883C1FFCB1AE00086377 /* SFDragTableViewController.swift in Sources */,
@@ -2027,6 +2049,7 @@
 				D35BCE242024403A00047639 /* LoadNibProtocol.swift in Sources */,
 				D3DE1C8D200CBD9900EC732C /* SFModalPresentedViewController.swift in Sources */,
 				D39706D31FF3795100946BB9 /* CountryModel.swift in Sources */,
+				D3DD9727204E2C500065E9B6 /* SFCustomThread.swift in Sources */,
 				D3B27E8520187ADA00B5C832 /* SFLayoutGuideViewController.swift in Sources */,
 				D3C4A3D52046CF6800A64F0C /* UIImage-Extension.swift in Sources */,
 				D30904642029DCB10004B554 /* SFClosureViewController.swift in Sources */,
@@ -2076,6 +2099,7 @@
 				D3B77A0A20232EF200A3D11B /* SFNSCacheViewController.swift in Sources */,
 				D39665AF20295163001355AE /* SFFileHandleViewController.swift in Sources */,
 				D3FC685C200309FE003B924C /* SFTipsNavigationController.swift in Sources */,
+				D3DD9729204E300E0065E9B6 /* SFCustomOperation.swift in Sources */,
 				D3B779EA202306E700A3D11B /* SFNSObjectViewController.swift in Sources */,
 				D39706BC1FF3795100946BB9 /* SFWaterFallViewController.swift in Sources */,
 				D39706D41FF3795100946BB9 /* FlagView.swift in Sources */,

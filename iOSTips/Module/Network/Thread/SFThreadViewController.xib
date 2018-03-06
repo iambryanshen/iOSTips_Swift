@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="djP-kx-jpg">
-                    <rect key="frame" x="95" y="177" width="184" height="310"/>
+                    <rect key="frame" x="95" y="137" width="184" height="350"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-z9-S8C">
                             <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
@@ -102,6 +102,16 @@
                             </state>
                             <connections>
                                 <action selector="lockThread:" destination="-1" eventType="touchUpInside" id="qKv-Ye-EDr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaL-Tr-tqN">
+                            <rect key="frame" x="0.0" y="320" width="184" height="30"/>
+                            <color key="backgroundColor" red="0.0039215686269999999" green="0.63921568630000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="自定义队列">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="customThread:" destination="-1" eventType="touchUpInside" id="vBs-TH-JP2"/>
                             </connections>
                         </button>
                     </subviews>
