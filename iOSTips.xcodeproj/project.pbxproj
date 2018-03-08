@@ -89,6 +89,8 @@
 		D36D7E7B2043E9DF006A9628 /* SFGCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D7E792043E9DF006A9628 /* SFGCDViewController.swift */; };
 		D36D7E802043EA76006A9628 /* SFFunctionQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D7E7E2043EA76006A9628 /* SFFunctionQueueViewController.swift */; };
 		D36D7E812043EA76006A9628 /* SFFunctionQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36D7E7F2043EA76006A9628 /* SFFunctionQueueViewController.xib */; };
+		D37DC181205100EF00C05481 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D37DC17F205100EF00C05481 /* 2.JPG */; };
+		D37DC182205100EF00C05481 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D37DC180205100EF00C05481 /* 1.JPG */; };
 		D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387BA641FE593DD00048D0F /* UIColor-Extension.swift */; };
 		D39030F81FF50D3900E5633F /* SFSafeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39030F71FF50D3900E5633F /* SFSafeAreaViewController.swift */; };
 		D392883C1FFCB1AE00086377 /* SFDragTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392883B1FFCB1AE00086377 /* SFDragTableViewController.swift */; };
@@ -292,6 +294,8 @@
 		D36D7E792043E9DF006A9628 /* SFGCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGCDViewController.swift; sourceTree = "<group>"; };
 		D36D7E7E2043EA76006A9628 /* SFFunctionQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFFunctionQueueViewController.swift; sourceTree = "<group>"; };
 		D36D7E7F2043EA76006A9628 /* SFFunctionQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFFunctionQueueViewController.xib; sourceTree = "<group>"; };
+		D37DC17F205100EF00C05481 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
+		D37DC180205100EF00C05481 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
 		D387BA641FE593DD00048D0F /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		D39030F71FF50D3900E5633F /* SFSafeAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafeAreaViewController.swift; sourceTree = "<group>"; };
 		D392883B1FFCB1AE00086377 /* SFDragTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragTableViewController.swift; sourceTree = "<group>"; };
@@ -678,9 +682,9 @@
 			isa = PBXGroup;
 			children = (
 				D35BCDE220241ADF00047639 /* Controller */,
-				D3683050202C77E200674E4F /* Zip */,
-				D3683044202C6C7800674E4F /* MultipleParam */,
 				D3683045202C6C7800674E4F /* UploadSth */,
+				D3683044202C6C7800674E4F /* MultipleParam */,
+				D3683050202C77E200674E4F /* Zip */,
 			);
 			path = UploadTask;
 			sourceTree = "<group>";
@@ -933,6 +937,7 @@
 		D3683050202C77E200674E4F /* Zip */ = {
 			isa = PBXGroup;
 			children = (
+				D37DC17E205100EF00C05481 /* Resource */,
 				D3683051202C780200674E4F /* SFZipViewController.swift */,
 				D3683053202C780D00674E4F /* SFZipViewController.xib */,
 			);
@@ -964,6 +969,15 @@
 				D36D7E7F2043EA76006A9628 /* SFFunctionQueueViewController.xib */,
 			);
 			path = FunctionQueue;
+			sourceTree = "<group>";
+		};
+		D37DC17E205100EF00C05481 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D37DC17F205100EF00C05481 /* 2.JPG */,
+				D37DC180205100EF00C05481 /* 1.JPG */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D3856839200D837E00D3B309 /* NSObject */ = {
@@ -1310,14 +1324,14 @@
 		D397069F1FF3795100946BB9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D3363C30204CDB61000C92F2 /* Operation */,
-				D36D7E782043C6FD006A9628 /* GCD */,
-				D3616A6520414274009AE65F /* Thread */,
+				D39706E41FF379F800946BB9 /* Reachability */,
 				D3616A6020413A32009AE65F /* Pthread */,
+				D3616A6520414274009AE65F /* Thread */,
+				D36D7E782043C6FD006A9628 /* GCD */,
+				D3363C30204CDB61000C92F2 /* Operation */,
+				D35BCDDE20241ADF00047639 /* URLSession */,
 				D356DB03202D963500514C1B /* Alamofire */,
 				D3F7CC5E20271E0800C71BDD /* JSON */,
-				D35BCDDE20241ADF00047639 /* URLSession */,
-				D39706E41FF379F800946BB9 /* Reachability */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1864,6 +1878,7 @@
 				D32B97D41FF4CB1100478265 /* WWAN.png in Resources */,
 				D39706CA1FF3795100946BB9 /* deguo.gif in Resources */,
 				D32B97D51FF4CB1100478265 /* Airport.png in Resources */,
+				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
 				D39665AE20295163001355AE /* SFFileHandleViewController.xib in Resources */,
 				D368304F202C6D3400674E4F /* SFMultipleParamViewController.xib in Resources */,
 				D39706CF1FF3795100946BB9 /* ruidian.gif in Resources */,
@@ -1874,6 +1889,7 @@
 				D3B77A0120232A4100A3D11B /* SFNSKeyedArchiverViewController.xib in Resources */,
 				D39706C81FF3795100946BB9 /* hanguo.gif in Resources */,
 				D39706D21FF3795100946BB9 /* flags.plist in Resources */,
+				D37DC182205100EF00C05481 /* 1.JPG in Resources */,
 				D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */,
 				D3F55F881FE4FCE300EC214F /* LaunchScreen.storyboard in Resources */,
 				D39706D01FF3795100946BB9 /* ying.gif in Resources */,

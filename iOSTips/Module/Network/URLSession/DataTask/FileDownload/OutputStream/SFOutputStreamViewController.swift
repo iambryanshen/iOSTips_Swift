@@ -35,7 +35,7 @@ class SFOutputStreamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 断点续传（离线下载）
+        // 断点续传（离线下载）：获取上次下载文件的断点
         let attribteds = try? FileManager.default.attributesOfItem(atPath: fullPath)
         if let currentSize = attribteds?[FileAttributeKey.size] as? Float {
             self.currentSize = currentSize

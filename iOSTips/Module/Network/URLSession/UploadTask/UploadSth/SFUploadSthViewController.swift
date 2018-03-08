@@ -34,7 +34,7 @@ class SFUploadSthViewController: UIViewController {
     }()
     
     // 设置请求体数据
-    /*
+    /*请求体格式
      ------WebKitFormBoundaryWn7cGV6RiPpTDuuY
      Content-Disposition: form-data; name="file"; filename=""
      Content-Type: application/octet-stream

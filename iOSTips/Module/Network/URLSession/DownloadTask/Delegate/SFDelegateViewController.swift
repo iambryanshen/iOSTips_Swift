@@ -26,7 +26,7 @@ class SFDelegateViewController: UIViewController {
         let configuration = URLSessionConfiguration.default
         return URLSession(configuration: configuration, delegate: self, delegateQueue: OperationQueue.main)
     }()
-    
+
     lazy var downloadTask: URLSessionDownloadTask = {
         let url = URL(string: "resources/videos/minion_01.mp4", relativeTo: baseURL)
         let request = URLRequest(url: url!)
@@ -71,6 +71,7 @@ extension SFDelegateViewController: URLSessionDownloadDelegate {
         
         // 计算下载进度
         let progress = Float(totalBytesWritten)/Float(totalBytesExpectedToWrite)
+        
         // 设置下载进度
         self.progressView.progress = progress
         self.progressLabel.text = "\(progress)"
@@ -80,6 +81,7 @@ extension SFDelegateViewController: URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         
         let fullPath = cachePath + "/" + (downloadTask.response?.suggestedFilename ?? "")
+        
         // 注意：创建保存文件目录URL时，需要通过fileURLWithPath创建，这样创建的URL前面会有:file://
         let fullPathURL = URL(fileURLWithPath: fullPath)
         do {

@@ -35,7 +35,6 @@
                             <state key="normal" title="get1"/>
                             <connections>
                                 <action selector="get1:" destination="-1" eventType="touchUpInside" id="005-Uw-J9K"/>
-                                <action selector="get:" destination="-1" eventType="touchUpInside" id="PIN-Q8-3lf"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-c0-m25">
@@ -43,7 +42,6 @@
                             <state key="normal" title="get2"/>
                             <connections>
                                 <action selector="get2:" destination="-1" eventType="touchUpInside" id="7b4-nJ-pI1"/>
-                                <action selector="get:" destination="-1" eventType="touchUpInside" id="3mo-qI-oA0"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnS-Bt-c2z">

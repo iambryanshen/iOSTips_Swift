@@ -33,7 +33,7 @@ class SFFileHandleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // 断点续传（离线下载）
+        // 断点续传（离线下载）：获取上次下载的保存在plist文件的断点位置
         let attritutes = try? FileManager.default.attributesOfItem(atPath: fullPath)
         if let currentSize = attritutes?[FileAttributeKey.size] as? Float {
             self.currentSize = currentSize
@@ -94,10 +94,14 @@ extension SFFileHandleViewController {
  */
 extension SFFileHandleViewController {
     func startDownload() {
+        
         let url = URL(string: "resources/videos/minion_01.mp4", relativeTo: baseURL)
         var request = URLRequest(url: url!)
+        
+        // 离线断点下载，当已经下载一部分数据后，从上次下载的地方继续下载
         let value = "bytes=\(Int64(self.currentSize))-"
         request.setValue(value, forHTTPHeaderField: "Range")
+        
         let task: URLSessionDataTask = session.dataTask(with: request)
         self.task = task
         task.resume()
@@ -109,6 +113,7 @@ extension SFFileHandleViewController: URLSessionDataDelegate {
     
     // 接收到响应时调用
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
+        
         // 1. 保存下载数据总长度（用来计算进度）
         self.totalSize = Float(response.expectedContentLength) + self.currentSize
         // 1.1. 保存视频的总大小（如果视频下载过程中，App突然退出，下次恢复下载时，保存的视频总大小用来计算初始进度）
@@ -121,7 +126,7 @@ extension SFFileHandleViewController: URLSessionDataDelegate {
         
         // 3. 创建文件句柄并指向空文件
         fileHandle = FileHandle(forWritingAtPath: fullPath)
-        // 3.1. 第二次下载（断点续传）需要移动文件句柄指针到文件末尾，如果是第一次，文件为空，移动不影响结果
+        // 3.1. 第二次下载（断点续传）需要移动文件句柄指针到文件末尾，如果是第一次，文件为空，移动文件句柄指针到文件末尾不影响结果
         fileHandle?.seekToEndOfFile()
         
         // 通知系统允许接收数据

@@ -33,10 +33,11 @@ class SFGetPostViewController: UIViewController {
 
 //MARK: - get
 extension SFGetPostViewController {
+    
     // URL
     func get() {
         let session = URLSession.shared
-        let url = URL(string: "?username=520it&pwd=520it&type=JSON", relativeTo: loginURL)
+        let url = URL(string: "https://httpbin.org/get")
         let task = session.dataTask(with: url!) { (data, response, error) in
             if error != nil {
                 print(error!)
@@ -51,7 +52,7 @@ extension SFGetPostViewController {
     // URLRequest
     func get1() {
         let session = URLSession.shared
-        let url = URL(string: "?username=520it&pwd=520it&type=JSON", relativeTo: loginURL)
+        let url = URL(string: "https://httpbin.org/get")
         let request = URLRequest(url: url!)
         let task = session.dataTask(with: request) { (data, response, error) in
             if error != nil {
@@ -68,7 +69,7 @@ extension SFGetPostViewController {
     func get2() {
         let configuration = URLSessionConfiguration.default
         let session = URLSession(configuration: configuration, delegate: self, delegateQueue: OperationQueue.main)
-        let url = URL(string: "?username=520it&pwd=520it&type=JSON", relativeTo: loginURL)
+        let url = URL(string: "https://httpbin.org/get")
         let task = session.dataTask(with: url!)
         task.resume()
     }
@@ -79,6 +80,7 @@ extension SFGetPostViewController {
  post请求，参数无法包含在URL中，所以无法直接通过URL创建URLSessionDataTask，必须借助URLRequest实现
  */
 extension SFGetPostViewController {
+    
     func post() {
         let session = URLSession.shared
         var request = URLRequest(url: loginURL!)

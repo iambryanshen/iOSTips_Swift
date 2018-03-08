@@ -9,6 +9,7 @@ target 'iOSTips' do
 
 pod 'Kingfisher', '~> 4.6.1'
 pod 'Alamofire', '~> 4.6.0'
+pod 'Zip', '~> 1.1.0'
 
 
 end
