@@ -12,7 +12,7 @@ class SFUIKitViewController: SFBaseViewController {
     
     override func viewDidLoad() {
        
-        headers = ["控件", "动效", "转场动效", "AutoLayout", "iPhone X", "Alert", "手势识别", "UIView动画", "控制器的切换方式"]
+        headers = ["控件", "动效", "转场动效", "AutoLayout", "iPhone X", "Alert", "手势识别", "UIView动画", "控制器的切换方式", "Quartz2D"]
         
         dataSource = [["UILabel扩展设置文字样式": SFUILabelViewController(),
                  "UITextField&UIPickView实现注册登录界面": SFLoginRegisterViewController(),
@@ -37,6 +37,9 @@ class SFUIKitViewController: SFBaseViewController {
                 ["transform": SFTransformViewController(),],
                 
                 ["Modal": SFModalViewController(),],
+                
+                ["基础图形": SFBaseGraphicsViewController(),
+                 "自定义进度圆圈": SFDrawProgressViewController()],
         ]
         
         super.viewDidLoad()

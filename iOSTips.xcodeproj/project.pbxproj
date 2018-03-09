@@ -22,6 +22,10 @@
 		D3113EF01FEC9160003EB527 /* SFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3113ECF1FEC9160003EB527 /* SFTabBarController.swift */; };
 		D31587842044F7D800C8B66E /* SFApplyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31587822044F7D800C8B66E /* SFApplyGroupViewController.swift */; };
 		D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31587832044F7D800C8B66E /* SFApplyGroupViewController.xib */; };
+		D318C4EF20521DE900D507BB /* SFDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4EE20521DE900D507BB /* SFDrawView.swift */; };
+		D318C4F42052789600D507BB /* SFDrawProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */; };
+		D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */; };
+		D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */; };
 		D31C391C1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C391A1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift */; };
 		D31C391F1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C391D1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift */; };
 		D31C39201FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C391E1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib */; };
@@ -35,6 +39,8 @@
 		D32B97D71FF4CBDD00478265 /* SFNetworkStateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B97D61FF4CBDD00478265 /* SFNetworkStateViewController.xib */; };
 		D32DAEE420401BA500BFA18E /* SFResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32DAEE220401BA500BFA18E /* SFResponseViewController.swift */; };
 		D32DAEE520401BA500BFA18E /* SFResponseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */; };
+		D3337F5F205151B700B6EF74 /* SFBaseGraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3337F5D205151B700B6EF74 /* SFBaseGraphicsViewController.swift */; };
+		D3337F60205151B700B6EF74 /* SFBaseGraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3337F5E205151B700B6EF74 /* SFBaseGraphicsViewController.xib */; };
 		D3363C33204CDBA3000C92F2 /* SFOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */; };
 		D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */; };
 		D344489320196FE7001455AC /* SFUIStackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344489120196FE7001455AC /* SFUIStackViewViewController.swift */; };
@@ -226,6 +232,10 @@
 		D3113ED11FEC9160003EB527 /* SFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFBaseViewController.swift; sourceTree = "<group>"; };
 		D31587822044F7D800C8B66E /* SFApplyGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFApplyGroupViewController.swift; sourceTree = "<group>"; };
 		D31587832044F7D800C8B66E /* SFApplyGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFApplyGroupViewController.xib; sourceTree = "<group>"; };
+		D318C4EE20521DE900D507BB /* SFDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawView.swift; sourceTree = "<group>"; };
+		D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressViewController.swift; sourceTree = "<group>"; };
+		D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDrawProgressViewController.xib; sourceTree = "<group>"; };
+		D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressView.swift; sourceTree = "<group>"; };
 		D31C391A1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUICollectionViewLifeCycleViewController.swift; sourceTree = "<group>"; };
 		D31C391D1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLifeCycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31C391E1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFLifeCycleCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -241,6 +251,8 @@
 		D32B97D61FF4CBDD00478265 /* SFNetworkStateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFNetworkStateViewController.xib; sourceTree = "<group>"; };
 		D32DAEE220401BA500BFA18E /* SFResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFResponseViewController.swift; sourceTree = "<group>"; };
 		D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFResponseViewController.xib; sourceTree = "<group>"; };
+		D3337F5D205151B700B6EF74 /* SFBaseGraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseGraphicsViewController.swift; sourceTree = "<group>"; };
+		D3337F5E205151B700B6EF74 /* SFBaseGraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFBaseGraphicsViewController.xib; sourceTree = "<group>"; };
 		D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOperationViewController.swift; sourceTree = "<group>"; };
 		D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOperationViewController.xib; sourceTree = "<group>"; };
 		D344489120196FE7001455AC /* SFUIStackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUIStackViewViewController.swift; sourceTree = "<group>"; };
@@ -547,6 +559,24 @@
 			path = ApplyGroup;
 			sourceTree = "<group>";
 		};
+		D318C4F02052787B00D507BB /* DrawProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				D318C4F12052787B00D507BB /* View */,
+				D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */,
+				D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */,
+			);
+			path = DrawProgressView;
+			sourceTree = "<group>";
+		};
+		D318C4F12052787B00D507BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D31C39191FFDB2CE00D38AA9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +621,33 @@
 				D32DAEE320401BA500BFA18E /* SFResponseViewController.xib */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		D3337F5B2051519900B6EF74 /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				D318C4F02052787B00D507BB /* DrawProgressView */,
+				D3337F5C2051519900B6EF74 /* BaseGraphics */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
+		D3337F5C2051519900B6EF74 /* BaseGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				D3337F612051520000B6EF74 /* View */,
+				D3337F5D205151B700B6EF74 /* SFBaseGraphicsViewController.swift */,
+				D3337F5E205151B700B6EF74 /* SFBaseGraphicsViewController.xib */,
+			);
+			path = BaseGraphics;
+			sourceTree = "<group>";
+		};
+		D3337F612051520000B6EF74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D318C4EE20521DE900D507BB /* SFDrawView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D3363C30204CDB61000C92F2 /* Operation */ = {
@@ -1120,6 +1177,7 @@
 		D397066A1FF3795100946BB9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D3337F5B2051519900B6EF74 /* Quartz2D */,
 				D3616A5120410AB2009AE65F /* Modal */,
 				D3616A5720410AB3009AE65F /* Transform */,
 				D3616A5420410AB2009AE65F /* UIGestureRecognizer */,
@@ -1880,6 +1938,7 @@
 				D32B97D51FF4CB1100478265 /* Airport.png in Resources */,
 				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
 				D39665AE20295163001355AE /* SFFileHandleViewController.xib in Resources */,
+				D3337F60205151B700B6EF74 /* SFBaseGraphicsViewController.xib in Resources */,
 				D368304F202C6D3400674E4F /* SFMultipleParamViewController.xib in Resources */,
 				D39706CF1FF3795100946BB9 /* ruidian.gif in Resources */,
 				D3FDAEC32030358B00C35433 /* SFDownloadViewController.xib in Resources */,
@@ -1921,6 +1980,7 @@
 				D39706C71FF3795100946BB9 /* wlgui.gif in Resources */,
 				D3F7CC922027450E00C71BDD /* SFJSONExampleCell.xib in Resources */,
 				D3E5BD5720342D63003DA140 /* SFAppJumpViewController.xib in Resources */,
+				D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */,
 				D356DB0F202D98FB00514C1B /* SFAFGetPostViewController.xib in Resources */,
 				D39706E21FF3795100946BB9 /* apps.plist in Resources */,
 				D3683054202C780D00674E4F /* SFZipViewController.xib in Resources */,
@@ -2003,12 +2063,14 @@
 				D39706BF1FF3795100946BB9 /* TextFieldProtocol.swift in Sources */,
 				D362241420440F1D0058222B /* UIDevice-Extension.swift in Sources */,
 				D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */,
+				D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */,
 				D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */,
 				D31587842044F7D800C8B66E /* SFApplyGroupViewController.swift in Sources */,
 				D3DE1C89200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift in Sources */,
 				D3B77A0420232CF400A3D11B /* SFKeyedArchiverView.swift in Sources */,
 				D35BCDE720241AF200047639 /* SFURLSessionViewController.swift in Sources */,
 				D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */,
+				D318C4EF20521DE900D507BB /* SFDrawView.swift in Sources */,
 				D39706B71FF3795100946BB9 /* SFUILabelViewController.swift in Sources */,
 				D3DE1C8B200CBC0600EC732C /* SFModalAniamtionViewController.swift in Sources */,
 				D39030F81FF50D3900E5633F /* SFSafeAreaViewController.swift in Sources */,
@@ -2021,6 +2083,7 @@
 				D3B779FA2023280E00A3D11B /* SFNSKeyedArchiverViewController.swift in Sources */,
 				D39665A3202950A3001355AE /* SFDataTaskViewController.swift in Sources */,
 				D35BCE232024403A00047639 /* NibCollectionViewCell.swift in Sources */,
+				D318C4F42052789600D507BB /* SFDrawProgressViewController.swift in Sources */,
 				D3F7CC912027450E00C71BDD /* SFJSONExampleCell.swift in Sources */,
 				D324863B1FF4860C006EAACD /* SFNetworkStateTableViewCell.swift in Sources */,
 				D39288401FFCB1FB00086377 /* SFDragNormalViewController.swift in Sources */,
@@ -2039,6 +2102,7 @@
 				D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */,
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
+				D3337F5F205151B700B6EF74 /* SFBaseGraphicsViewController.swift in Sources */,
 				D35BCE262024403A00047639 /* ProtocolView.swift in Sources */,
 				D39706BA1FF3795100946BB9 /* SFEditTableView.swift in Sources */,
 				D3622411204408850058222B /* SFDeviceInfoViewController.swift in Sources */,
