@@ -10,7 +10,7 @@ import UIKit
 
 class SFNSCacheViewController: UIViewController {
     
-    lazy var cache: NSCache<NSString, NSString> = {
+    fileprivate lazy var cache: NSCache<NSString, NSString> = {
         let cache = NSCache<NSString, NSString>()
 //        cache.countLimit = 6
         cache.totalCostLimit = 8 // 需要配合存储方法一起使用：open func setObject(_ obj: ObjectType, forKey key: KeyType, cost g: Int)

@@ -12,7 +12,8 @@
  2. 如果有内存缓存，直接使用
  3. 如果没有内存缓存，去检查是否有磁盘缓存
  4. 如果有磁盘缓存，直接使用，同时保存一份到内存中
- 5. 如果没有磁盘缓存，下载图片并显示出来，同时分别保存一份到内存中和磁盘中
+ 5. 如果没有磁盘缓存，检查是否有缓存下载操作
+ 6. 如果有缓存下载操作，什么也不做，否则下载图片并显示出来，同时分别保存一份到内存中和磁盘中，并缓存下载操作到内存缓存中
  */
 
 import UIKit
@@ -34,8 +35,8 @@ class SFImageViewController: UIViewController {
     
     // 在内存中缓存下载的图片
 //    lazy var imageDict: [String: UIImage] = [String: UIImage]()
-    lazy var cache: NSCache<NSString, UIImage> = {
-        let cache = NSCache<NSString, UIImage>()
+    lazy var cache: NSCache<NSString, NSData> = {
+        let cache = NSCache<NSString, NSData>()
         cache.countLimit = 5
         cache.totalCostLimit = 10   // 设置该属性时，要配合方法open func setObject(_ obj: ObjectType, forKey key: KeyType, cost g: Int)才有效
         cache.delegate = self
@@ -43,7 +44,7 @@ class SFImageViewController: UIViewController {
     }()
     
     // 在内存中缓存下载操作
-    lazy var operations: [String: BlockOperation] = [String: BlockOperation]()
+    lazy var operations: [NSString: BlockOperation] = [NSString: BlockOperation]()
     lazy var queue = OperationQueue()
 
     override func viewDidLoad() {
@@ -74,87 +75,57 @@ extension SFImageViewController: UITableViewDataSource {
         
         let model = datasourceArray[indexPath.row]
         
-        // 1. 在显示图片之前，先检查有没有内存缓存
-        guard let icon = model.icon else {
+        guard let icon = model.icon as NSString? else {
             return ImageTableViewCell()
         }
-        let image = cache.object(forKey: icon as NSString)
-//        let image = imageDict[model.icon ?? ""]
+        
+        // 1. 在显示图片之前，先检查有没有内存缓存
+        let imageData = cache.object(forKey: icon)
         // 2. 如果有内存缓存，直接使用
-        if let image = image {
+        if let imageData = imageData as Data? {
             print("内存缓存\(indexPath)")
-            cell.iconImageView.image = image
-            
+            cell.iconImageView.image = UIImage(data: imageData)
         // 3. 如果没有内存缓存，去检查是否有磁盘缓存
         } else {
-            
-            var imageData = Data()
-            do {
-                let fileName = model.icon?.components(separatedBy: "/").last ?? ""
-                let fullPath = cachePath + "/\(fileName)"
-                let fullPathURL = URL(fileURLWithPath: fullPath, isDirectory: true)
-                imageData = try Data(contentsOf: fullPathURL)
-            } catch {
-                print("从磁盘缓存读取图片失败！")
-            }
-            let image = UIImage(data: imageData)
-            
+            let fileName = icon.components(separatedBy: "/").last ?? ""
+            let fullPath = cachePath + "/\(fileName)"
+            let fullPathURL = URL(fileURLWithPath: fullPath, isDirectory: true)
             // 4. 如果有磁盘缓存，直接使用，同时保存一份到内存中
-            if let image = image {
-                print("磁盘缓存\(indexPath)")
-                // 1. 使用磁盘缓存
-                cell.iconImageView?.image = image
-                // 2. 保存一份到内存缓存中
-                cache.setObject(image, forKey: icon as NSString, cost: 1)
-//                imageDict.updateValue(image, forKey: model.icon ?? "")
-                
-            // 5. 如果没有磁盘缓存，下载图片并显示出来，同时分别保存一份到内存中和磁盘中
+            if let imageData = NSData(contentsOf: fullPathURL) {
+                cell.iconImageView?.image = UIImage(data: imageData as Data)
+                cache.setObject(imageData, forKey: icon, cost: 1)
             } else {
+                // 5. 如果没有磁盘缓存，使用占位图片，并检查内存中有没有缓存下载操作
                 cell.iconImageView?.image = UIImage(named: "liuxinjia.JPG")
-                // 1. 下载图片
-                if let imageURL = URL(string: model.icon ?? "") {
-                    // 判断是否正在下载
-                    if let operation = operations[model.icon ?? ""] {
-                        print("下载中-\(indexPath)-\(operation)")
-                    } else {
-                        
-                        // 子线程下载图片
+                if let operation = operations[icon] {
+                    print("下载中-\(indexPath)-\(operation)")
+                    // 6. 如果没有缓存下载操作，创建下载操作下载图片并显示出来，同时分别保存一份到内存中和磁盘中
+                } else {
+                    if let imageURL = URL(string: icon as String) {
                         let operation = BlockOperation(block: {
-                            do {
-                                let imageData = try Data(contentsOf: imageURL)
-                                if let image = UIImage(data: imageData) {
-                                    // 2. 保存一份到内存缓存中
-//                                    self.imageDict.updateValue(image, forKey: model.icon ?? "")
-                                    self.cache.setObject(image, forKey: icon as NSString, cost: 1)
-                                    // 3. 保存一份到磁盘缓存中
-                                    do {
-                                        let fileName = model.icon?.components(separatedBy: "/").last ?? ""
-                                        let fullPath = cachePath + "/\(fileName)"
-                                        let fullPathURL = URL(fileURLWithPath: fullPath, isDirectory: true)
-                                        try imageData.write(to: fullPathURL)
-                                    } catch {
-                                        print("保存图片到磁盘缓存失败")
-                                    }
-                                }
-                                print("下载图片\(indexPath)")
-                            } catch {
-                                print("下载图片失败")
+                            if let imageData = NSData(contentsOf: imageURL) {
+                                // 7. 保存下载的图片到内存缓存和磁盘缓存
+                                self.cache.setObject(imageData, forKey: icon, cost: 1)
+                                let fileName = icon.components(separatedBy: "/").last ?? ""
+                                let fullPath = cachePath + "/\(fileName)"
+                                let fullPathURL = URL(fileURLWithPath: fullPath, isDirectory: true)
+                                imageData.write(to: fullPathURL, atomically: true)
                             }
-                            // 回到主线程刷新UI
+                            // 8. 回到主线程刷新UI
                             OperationQueue.main.addOperation {
                                 tableView.reloadRows(at: [indexPath], with: .bottom)
                             }
                         })
+                        // 9. 添加下载操作到队列中，开始下载
                         queue.addOperation(operation)
-                        // 保存下载操作到内存中
-                        operations.updateValue(operation, forKey: model.icon ?? "")
+                        // 10. 缓存下载操作到内存中
+                        operations.updateValue(operation, forKey: icon)
                     }
                 }
             }
         }
         cell.nameLabel.text = datasourceArray[indexPath.row].name
         cell.downloadLabel.text = datasourceArray[indexPath.row].download
-        
         return cell
     }
 }
