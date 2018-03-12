@@ -12,13 +12,16 @@ class SFNSObjectViewController: SFBaseViewController {
 
     override func viewDidLoad() {
         
-        headers = ["iOS本地存储"]
+        headers = ["iOS本地存储", "定时器"]
         
         dataSource = [["Plist": SFPlistViewController(),
                        "UserDefaults": SFUserDefaultsViewController(),
                        "NSKeyedArchiver": SFNSKeyedArchiverViewController(),
                        "NSCache": SFNSCacheViewController(),
-                       ],]
+                       ],
+                      
+                      ["CADisplayLink": SFDisplayLinkViewController(),],
+        ]
         
         super.viewDidLoad()
     }

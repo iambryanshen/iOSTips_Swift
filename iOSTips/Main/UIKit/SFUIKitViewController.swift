@@ -39,7 +39,9 @@ class SFUIKitViewController: SFBaseViewController {
                 ["Modal": SFModalViewController(),],
                 
                 ["基础图形": SFBaseGraphicsViewController(),
-                 "自定义进度圆圈": SFDrawProgressViewController()],
+                 "自定义进度圆圈": SFDrawProgressViewController(),
+                 "饼图": SFPieChartViewController(),
+                 "画文字": SFDrawTextViewController()],
         ]
         
         super.viewDidLoad()

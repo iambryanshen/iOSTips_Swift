@@ -99,6 +99,15 @@
 		D37DC182205100EF00C05481 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D37DC180205100EF00C05481 /* 1.JPG */; };
 		D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387BA641FE593DD00048D0F /* UIColor-Extension.swift */; };
 		D39030F81FF50D3900E5633F /* SFSafeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39030F71FF50D3900E5633F /* SFSafeAreaViewController.swift */; };
+		D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166B320560297004558CF /* SFPieChartViewController.swift */; };
+		D39166B620560297004558CF /* SFPieChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39166B420560297004558CF /* SFPieChartViewController.xib */; };
+		D39166B8205602A5004558CF /* SFPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166B7205602A5004558CF /* SFPieChartView.swift */; };
+		D39166BD20560F68004558CF /* SFDrawTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166BB20560F68004558CF /* SFDrawTextViewController.swift */; };
+		D39166BE20560F68004558CF /* SFDrawTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39166BC20560F68004558CF /* SFDrawTextViewController.xib */; };
+		D39166C220560F85004558CF /* SFDrawTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166C120560F85004558CF /* SFDrawTextView.swift */; };
+		D39166CB20561691004558CF /* SFDisplayLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166C920561691004558CF /* SFDisplayLinkViewController.swift */; };
+		D39166CC20561691004558CF /* SFDisplayLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39166CA20561691004558CF /* SFDisplayLinkViewController.xib */; };
+		D39166CF205616BB004558CF /* SFDisplayLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39166CE205616BB004558CF /* SFDisplayLinkView.swift */; };
 		D392883C1FFCB1AE00086377 /* SFDragTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392883B1FFCB1AE00086377 /* SFDragTableViewController.swift */; };
 		D392883E1FFCB1B700086377 /* SFDragCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392883D1FFCB1B700086377 /* SFDragCollectionViewController.swift */; };
 		D39288401FFCB1FB00086377 /* SFDragNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D392883F1FFCB1FB00086377 /* SFDragNormalViewController.swift */; };
@@ -310,6 +319,15 @@
 		D37DC180205100EF00C05481 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
 		D387BA641FE593DD00048D0F /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		D39030F71FF50D3900E5633F /* SFSafeAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafeAreaViewController.swift; sourceTree = "<group>"; };
+		D39166B320560297004558CF /* SFPieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPieChartViewController.swift; sourceTree = "<group>"; };
+		D39166B420560297004558CF /* SFPieChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPieChartViewController.xib; sourceTree = "<group>"; };
+		D39166B7205602A5004558CF /* SFPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPieChartView.swift; sourceTree = "<group>"; };
+		D39166BB20560F68004558CF /* SFDrawTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawTextViewController.swift; sourceTree = "<group>"; };
+		D39166BC20560F68004558CF /* SFDrawTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDrawTextViewController.xib; sourceTree = "<group>"; };
+		D39166C120560F85004558CF /* SFDrawTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawTextView.swift; sourceTree = "<group>"; };
+		D39166C920561691004558CF /* SFDisplayLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDisplayLinkViewController.swift; sourceTree = "<group>"; };
+		D39166CA20561691004558CF /* SFDisplayLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDisplayLinkViewController.xib; sourceTree = "<group>"; };
+		D39166CE205616BB004558CF /* SFDisplayLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDisplayLinkView.swift; sourceTree = "<group>"; };
 		D392883B1FFCB1AE00086377 /* SFDragTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragTableViewController.swift; sourceTree = "<group>"; };
 		D392883D1FFCB1B700086377 /* SFDragCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragCollectionViewController.swift; sourceTree = "<group>"; };
 		D392883F1FFCB1FB00086377 /* SFDragNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragNormalViewController.swift; sourceTree = "<group>"; };
@@ -626,6 +644,8 @@
 		D3337F5B2051519900B6EF74 /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
+				D39166B920560F26004558CF /* DrawText */,
+				D39166B12056024E004558CF /* PieChart */,
 				D318C4F02052787B00D507BB /* DrawProgressView */,
 				D3337F5C2051519900B6EF74 /* BaseGraphics */,
 			);
@@ -1049,6 +1069,7 @@
 		D385683E200D842B00D3B309 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				D39166C320561625004558CF /* Timer */,
 				D3B77A0720232E3100A3D11B /* NSCache */,
 				D3B779F8202327D700A3D11B /* NSKeyedArchiver */,
 				D3B779F320230B2B00A3D11B /* UserDefaults */,
@@ -1091,6 +1112,68 @@
 				D39030F71FF50D3900E5633F /* SFSafeAreaViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D39166B12056024E004558CF /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				D39166B22056024E004558CF /* View */,
+				D39166B320560297004558CF /* SFPieChartViewController.swift */,
+				D39166B420560297004558CF /* SFPieChartViewController.xib */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		D39166B22056024E004558CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D39166B7205602A5004558CF /* SFPieChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D39166B920560F26004558CF /* DrawText */ = {
+			isa = PBXGroup;
+			children = (
+				D39166BA20560F26004558CF /* View */,
+				D39166BB20560F68004558CF /* SFDrawTextViewController.swift */,
+				D39166BC20560F68004558CF /* SFDrawTextViewController.xib */,
+			);
+			path = DrawText;
+			sourceTree = "<group>";
+		};
+		D39166BA20560F26004558CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D39166C120560F85004558CF /* SFDrawTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D39166C320561625004558CF /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				D39166C420561625004558CF /* CADisplayLink */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		D39166C420561625004558CF /* CADisplayLink */ = {
+			isa = PBXGroup;
+			children = (
+				D39166CD205616AB004558CF /* View */,
+				D39166C920561691004558CF /* SFDisplayLinkViewController.swift */,
+				D39166CA20561691004558CF /* SFDisplayLinkViewController.xib */,
+			);
+			path = CADisplayLink;
+			sourceTree = "<group>";
+		};
+		D39166CD205616AB004558CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D39166CE205616BB004558CF /* SFDisplayLinkView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D392883A1FFCB19F00086377 /* ChildVCs */ = {
@@ -1926,6 +2009,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39166BE20560F68004558CF /* SFDrawTextViewController.xib in Resources */,
 				D39706CE1FF3795100946BB9 /* baxi.gif in Resources */,
 				D30904602029DC6E0004B554 /* SFDelegateViewController.xib in Resources */,
 				D39706DC1FF3795100946BB9 /* image.png in Resources */,
@@ -1936,6 +2020,7 @@
 				D32B97D41FF4CB1100478265 /* WWAN.png in Resources */,
 				D39706CA1FF3795100946BB9 /* deguo.gif in Resources */,
 				D32B97D51FF4CB1100478265 /* Airport.png in Resources */,
+				D39166CC20561691004558CF /* SFDisplayLinkViewController.xib in Resources */,
 				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
 				D39665AE20295163001355AE /* SFFileHandleViewController.xib in Resources */,
 				D3337F60205151B700B6EF74 /* SFBaseGraphicsViewController.xib in Resources */,
@@ -1948,6 +2033,7 @@
 				D3B77A0120232A4100A3D11B /* SFNSKeyedArchiverViewController.xib in Resources */,
 				D39706C81FF3795100946BB9 /* hanguo.gif in Resources */,
 				D39706D21FF3795100946BB9 /* flags.plist in Resources */,
+				D39166B620560297004558CF /* SFPieChartViewController.xib in Resources */,
 				D37DC182205100EF00C05481 /* 1.JPG in Resources */,
 				D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */,
 				D3F55F881FE4FCE300EC214F /* LaunchScreen.storyboard in Resources */,
@@ -2068,6 +2154,7 @@
 				D31587842044F7D800C8B66E /* SFApplyGroupViewController.swift in Sources */,
 				D3DE1C89200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift in Sources */,
 				D3B77A0420232CF400A3D11B /* SFKeyedArchiverView.swift in Sources */,
+				D39166CF205616BB004558CF /* SFDisplayLinkView.swift in Sources */,
 				D35BCDE720241AF200047639 /* SFURLSessionViewController.swift in Sources */,
 				D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */,
 				D318C4EF20521DE900D507BB /* SFDrawView.swift in Sources */,
@@ -2078,6 +2165,7 @@
 				D39706C11FF3795100946BB9 /* SFLoginRegisterViewController.swift in Sources */,
 				D39706EF1FF388E300946BB9 /* SFNetworkNavigationController.swift in Sources */,
 				D344489320196FE7001455AC /* SFUIStackViewViewController.swift in Sources */,
+				D39166BD20560F68004558CF /* SFDrawTextViewController.swift in Sources */,
 				D35BCE1C2024403A00047639 /* RegisterCellProtocol.swift in Sources */,
 				D3B779EE2023070600A3D11B /* SFNSObjectNavigationController.swift in Sources */,
 				D3B779FA2023280E00A3D11B /* SFNSKeyedArchiverViewController.swift in Sources */,
@@ -2099,6 +2187,7 @@
 				D392883E1FFCB1B700086377 /* SFDragCollectionViewController.swift in Sources */,
 				D31C391C1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift in Sources */,
 				D32486361FF46FE4006EAACD /* Reachability.m in Sources */,
+				D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */,
 				D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */,
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
@@ -2131,6 +2220,7 @@
 				D39706D31FF3795100946BB9 /* CountryModel.swift in Sources */,
 				D3DD9727204E2C500065E9B6 /* SFCustomThread.swift in Sources */,
 				D3B27E8520187ADA00B5C832 /* SFLayoutGuideViewController.swift in Sources */,
+				D39166C220560F85004558CF /* SFDrawTextView.swift in Sources */,
 				D3C4A3D52046CF6800A64F0C /* UIImage-Extension.swift in Sources */,
 				D30904642029DCB10004B554 /* SFClosureViewController.swift in Sources */,
 				D39706E01FF3795100946BB9 /* ImageTableViewCell.swift in Sources */,
@@ -2148,6 +2238,7 @@
 				D35BCE252024403A00047639 /* SFProtocolViewController.swift in Sources */,
 				D3FC685E20030A06003B924C /* SFTipsViewController.swift in Sources */,
 				D30904612029DC6E0004B554 /* SFDelegateViewController.swift in Sources */,
+				D39166B8205602A5004558CF /* SFPieChartView.swift in Sources */,
 				D32DAEE420401BA500BFA18E /* SFResponseViewController.swift in Sources */,
 				D39706D51FF3795100946BB9 /* CountryTextField.swift in Sources */,
 				D31C391F1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift in Sources */,
@@ -2158,6 +2249,7 @@
 				D3E5BD5320342D01003DA140 /* SFRuntimeViewController.swift in Sources */,
 				D3A4AA5A1FFCAEEA00BB4598 /* SFDragDemoViewController.swift in Sources */,
 				D3616A5F20410AB3009AE65F /* SFTransformViewController.swift in Sources */,
+				D39166CB20561691004558CF /* SFDisplayLinkViewController.swift in Sources */,
 				D394497C2005B1B800405C1F /* SFActivityIndicatorViewController.swift in Sources */,
 				D35BCE1B2024403A00047639 /* SFShakeAnimationViewController.swift in Sources */,
 				D3E5BD5B20343073003DA140 /* SFSystemSettingViewController.swift in Sources */,
