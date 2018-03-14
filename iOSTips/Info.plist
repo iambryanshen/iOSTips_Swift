@@ -61,5 +61,7 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>是否可以使用当前位置？</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>是否需要添加图片到系统相册？</string>
 </dict>
 </plist>

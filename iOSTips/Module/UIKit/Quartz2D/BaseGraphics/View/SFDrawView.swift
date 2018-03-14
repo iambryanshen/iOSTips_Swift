@@ -201,7 +201,7 @@ extension SFDrawView {
         let path = UIBezierPath(arcCenter: center, radius: bounds.width/2 - 100, startAngle: 0, endAngle: CGFloat.pi/2, clockwise: true)
         path.addLine(to: center)
         // 最后一行代码fillPath内部实现了close()实现的功能，自动关闭了path，所以该行可以省略
-//        path.close()
+        path.close()
         context?.addPath(path.cgPath)
         UIColor.red.set()
         

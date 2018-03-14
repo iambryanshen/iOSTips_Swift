@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFScreenShotViewController" customModule="iOSTips" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="7ZL-Ha-dof">
+                    <rect key="frame" x="67.5" y="153.5" width="240" height="360"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="360" id="8h0-zk-SNH"/>
+                        <constraint firstAttribute="width" constant="240" id="ClO-FO-JSc"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点击屏幕截屏，截屏保存到手机相册" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xme-gh-JTA">
+                    <rect key="frame" x="62.5" y="533.5" width="250" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7ZL-Ha-dof" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7DJ-T1-oTt"/>
+                <constraint firstItem="Xme-gh-JTA" firstAttribute="top" secondItem="7ZL-Ha-dof" secondAttribute="bottom" constant="20" id="Fvb-kY-JuK"/>
+                <constraint firstItem="Xme-gh-JTA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MDu-2J-wkE"/>
+                <constraint firstItem="7ZL-Ha-dof" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QR8-ya-rW6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="girl" width="1080" height="1440"/>
+    </resources>
+</document>

@@ -41,7 +41,12 @@ class SFUIKitViewController: SFBaseViewController {
                 ["基础图形": SFBaseGraphicsViewController(),
                  "自定义进度圆圈": SFDrawProgressViewController(),
                  "饼图": SFPieChartViewController(),
-                 "画文字": SFDrawTextViewController()],
+                 "画文字": SFDrawTextViewController(),
+                 "上下文状态栈（画不同颜色“十”字）": SFContextStatusStackViewController(),
+                 "上下文的矩阵操作": SFContextMatrixOperationsViewController(),
+                 "图片加水印": SFImageWaterMarkViewController(),
+                 "使用Quartz 2D给图片加圆角": SFRoundImageViewController(),
+                 "屏幕截屏": SFScreenShotViewController(),],
         ]
         
         super.viewDidLoad()
