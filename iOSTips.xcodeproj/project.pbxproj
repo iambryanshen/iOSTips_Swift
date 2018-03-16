@@ -26,6 +26,14 @@
 		D318C4F42052789600D507BB /* SFDrawProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */; };
 		D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */; };
 		D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */; };
+		D31B083D205B5D1200D4EB1A /* SFCALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B083B205B5D1200D4EB1A /* SFCALayerViewController.swift */; };
+		D31B083E205B5D1200D4EB1A /* SFCALayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B083C205B5D1200D4EB1A /* SFCALayerViewController.xib */; };
+		D31B0842205B693C00D4EB1A /* SFCATransform3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B0840205B693C00D4EB1A /* SFCATransform3DViewController.swift */; };
+		D31B0843205B693C00D4EB1A /* SFCATransform3DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B0841205B693C00D4EB1A /* SFCATransform3DViewController.xib */; };
+		D31B0847205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B0845205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift */; };
+		D31B084A205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B0849205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib */; };
+		D31B084E205BA73000D4EB1A /* SFCALayerClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B084C205BA73000D4EB1A /* SFCALayerClockViewController.swift */; };
+		D31B084F205BA73000D4EB1A /* SFCALayerClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B084D205BA73000D4EB1A /* SFCALayerClockViewController.xib */; };
 		D31C391C1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C391A1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift */; };
 		D31C391F1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C391D1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift */; };
 		D31C39201FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31C391E1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib */; };
@@ -257,6 +265,14 @@
 		D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressViewController.swift; sourceTree = "<group>"; };
 		D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDrawProgressViewController.xib; sourceTree = "<group>"; };
 		D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressView.swift; sourceTree = "<group>"; };
+		D31B083B205B5D1200D4EB1A /* SFCALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCALayerViewController.swift; sourceTree = "<group>"; };
+		D31B083C205B5D1200D4EB1A /* SFCALayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCALayerViewController.xib; sourceTree = "<group>"; };
+		D31B0840205B693C00D4EB1A /* SFCATransform3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCATransform3DViewController.swift; sourceTree = "<group>"; };
+		D31B0841205B693C00D4EB1A /* SFCATransform3DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCATransform3DViewController.xib; sourceTree = "<group>"; };
+		D31B0845205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFImplicitAnimationViewController.swift; sourceTree = "<group>"; };
+		D31B0849205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFImplicitAnimationViewController.xib; sourceTree = "<group>"; };
+		D31B084C205BA73000D4EB1A /* SFCALayerClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCALayerClockViewController.swift; sourceTree = "<group>"; };
+		D31B084D205BA73000D4EB1A /* SFCALayerClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCALayerClockViewController.xib; sourceTree = "<group>"; };
 		D31C391A1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUICollectionViewLifeCycleViewController.swift; sourceTree = "<group>"; };
 		D31C391D1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLifeCycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31C391E1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFLifeCycleCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -617,6 +633,53 @@
 				D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D31B0839205B5CF300D4EB1A /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D31B084B205BA71E00D4EB1A /* CALayerClock */,
+				D31B0844205B929A00D4EB1A /* ImplicitAnimation */,
+				D31B083F205B692C00D4EB1A /* CATransform3D */,
+				D31B083A205B5D0300D4EB1A /* CALayer */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		D31B083A205B5D0300D4EB1A /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				D31B083B205B5D1200D4EB1A /* SFCALayerViewController.swift */,
+				D31B083C205B5D1200D4EB1A /* SFCALayerViewController.xib */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		D31B083F205B692C00D4EB1A /* CATransform3D */ = {
+			isa = PBXGroup;
+			children = (
+				D31B0840205B693C00D4EB1A /* SFCATransform3DViewController.swift */,
+				D31B0841205B693C00D4EB1A /* SFCATransform3DViewController.xib */,
+			);
+			path = CATransform3D;
+			sourceTree = "<group>";
+		};
+		D31B0844205B929A00D4EB1A /* ImplicitAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D31B0845205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift */,
+				D31B0849205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib */,
+			);
+			path = ImplicitAnimation;
+			sourceTree = "<group>";
+		};
+		D31B084B205BA71E00D4EB1A /* CALayerClock */ = {
+			isa = PBXGroup;
+			children = (
+				D31B084C205BA73000D4EB1A /* SFCALayerClockViewController.swift */,
+				D31B084D205BA73000D4EB1A /* SFCALayerClockViewController.xib */,
+			);
+			path = CALayerClock;
 			sourceTree = "<group>";
 		};
 		D31C39191FFDB2CE00D38AA9 /* Controller */ = {
@@ -1316,6 +1379,7 @@
 		D397066A1FF3795100946BB9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D31B0839205B5CF300D4EB1A /* CoreAnimation */,
 				D3337F5B2051519900B6EF74 /* Quartz2D */,
 				D3616A5120410AB2009AE65F /* Modal */,
 				D3616A5720410AB3009AE65F /* Transform */,
@@ -2114,6 +2178,7 @@
 				D39706CA1FF3795100946BB9 /* deguo.gif in Resources */,
 				D32B97D51FF4CB1100478265 /* Airport.png in Resources */,
 				D393207A2057EAA0005C9E02 /* SFImageWaterMarkViewController.xib in Resources */,
+				D31B084A205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib in Resources */,
 				D39166CC20561691004558CF /* SFDisplayLinkViewController.xib in Resources */,
 				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
 				D39665AE20295163001355AE /* SFFileHandleViewController.xib in Resources */,
@@ -2125,12 +2190,15 @@
 				D39706C21FF3795100946BB9 /* SFLoginRegisterViewController.xib in Resources */,
 				D3CEABAB203E5CD30054D25E /* SFUploadViewController.xib in Resources */,
 				D344489420196FE7001455AC /* SFUIStackViewViewController.xib in Resources */,
+				D31B083E205B5D1200D4EB1A /* SFCALayerViewController.xib in Resources */,
 				D3B77A0120232A4100A3D11B /* SFNSKeyedArchiverViewController.xib in Resources */,
 				D39706C81FF3795100946BB9 /* hanguo.gif in Resources */,
+				D31B084F205BA73000D4EB1A /* SFCALayerClockViewController.xib in Resources */,
 				D39706D21FF3795100946BB9 /* flags.plist in Resources */,
 				D39166B620560297004558CF /* SFPieChartViewController.xib in Resources */,
 				D37DC182205100EF00C05481 /* 1.JPG in Resources */,
 				D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */,
+				D31B0843205B693C00D4EB1A /* SFCATransform3DViewController.xib in Resources */,
 				D3F55F881FE4FCE300EC214F /* LaunchScreen.storyboard in Resources */,
 				D39706D01FF3795100946BB9 /* ying.gif in Resources */,
 				D3E5BD5C20343073003DA140 /* SFSystemSettingViewController.xib in Resources */,
@@ -2287,14 +2355,18 @@
 				D392883E1FFCB1B700086377 /* SFDragCollectionViewController.swift in Sources */,
 				D31C391C1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift in Sources */,
 				D32486361FF46FE4006EAACD /* Reachability.m in Sources */,
+				D31B0847205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift in Sources */,
 				D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */,
 				D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */,
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
 				D3337F5F205151B700B6EF74 /* SFBaseGraphicsViewController.swift in Sources */,
+				D31B084E205BA73000D4EB1A /* SFCALayerClockViewController.swift in Sources */,
 				D35BCE262024403A00047639 /* ProtocolView.swift in Sources */,
 				D3BACEA920575F9200CFCE2B /* SFContextStatusStackView.swift in Sources */,
+				D31B0842205B693C00D4EB1A /* SFCATransform3DViewController.swift in Sources */,
 				D39706BA1FF3795100946BB9 /* SFEditTableView.swift in Sources */,
+				D31B083D205B5D1200D4EB1A /* SFCALayerViewController.swift in Sources */,
 				D3622411204408850058222B /* SFDeviceInfoViewController.swift in Sources */,
 				D35BCE222024403A00047639 /* CodeTableViewCell.swift in Sources */,
 				D3616A6320413A3F009AE65F /* SFPthreadViewController.swift in Sources */,
