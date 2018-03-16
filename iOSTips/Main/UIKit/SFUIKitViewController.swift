@@ -51,7 +51,8 @@ class SFUIKitViewController: SFBaseViewController {
                 ["CALayer":  SFCALayerViewController(),
                  "CATransform3D": SFCATransform3DViewController(),
                  "隐式动画": SFImplicitAnimationViewController(),
-                 "CALayer实现时钟": SFCALayerClockViewController(),],
+                 "CALayer实现时钟": SFCALayerClockViewController(),
+                 "CABasicAnimation": SFCABasicAnimationViewController(),],
         ]
         
         super.viewDidLoad()

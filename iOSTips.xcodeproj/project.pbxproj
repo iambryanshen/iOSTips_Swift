@@ -182,6 +182,8 @@
 		D39706E31FF3795100946BB9 /* liuxinjia.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D39706B61FF3795100946BB9 /* liuxinjia.JPG */; };
 		D39706EF1FF388E300946BB9 /* SFNetworkNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39706ED1FF388E300946BB9 /* SFNetworkNavigationController.swift */; };
 		D39706F01FF388E300946BB9 /* SFNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39706EE1FF388E300946BB9 /* SFNetworkViewController.swift */; };
+		D39CA8C5205BE18500D00A94 /* SFCABasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39CA8C3205BE18500D00A94 /* SFCABasicAnimationViewController.swift */; };
+		D39CA8C6205BE18500D00A94 /* SFCABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39CA8C4205BE18500D00A94 /* SFCABasicAnimationViewController.xib */; };
 		D3A4AA3A1FFC61FE00BB4598 /* SFDragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4AA391FFC61FE00BB4598 /* SFDragViewController.swift */; };
 		D3A4AA5A1FFCAEEA00BB4598 /* SFDragDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4AA591FFCAEEA00BB4598 /* SFDragDemoViewController.swift */; };
 		D3B27E8520187ADA00B5C832 /* SFLayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B27E8420187ADA00B5C832 /* SFLayoutGuideViewController.swift */; };
@@ -422,6 +424,8 @@
 		D39706B61FF3795100946BB9 /* liuxinjia.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = liuxinjia.JPG; sourceTree = "<group>"; };
 		D39706ED1FF388E300946BB9 /* SFNetworkNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNetworkNavigationController.swift; sourceTree = "<group>"; };
 		D39706EE1FF388E300946BB9 /* SFNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNetworkViewController.swift; sourceTree = "<group>"; };
+		D39CA8C3205BE18500D00A94 /* SFCABasicAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCABasicAnimationViewController.swift; sourceTree = "<group>"; };
+		D39CA8C4205BE18500D00A94 /* SFCABasicAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCABasicAnimationViewController.xib; sourceTree = "<group>"; };
 		D3A4AA391FFC61FE00BB4598 /* SFDragViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragViewController.swift; sourceTree = "<group>"; };
 		D3A4AA591FFCAEEA00BB4598 /* SFDragDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragDemoViewController.swift; sourceTree = "<group>"; };
 		D3B27E8420187ADA00B5C832 /* SFLayoutGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLayoutGuideViewController.swift; sourceTree = "<group>"; };
@@ -638,10 +642,11 @@
 		D31B0839205B5CF300D4EB1A /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				D31B084B205BA71E00D4EB1A /* CALayerClock */,
-				D31B0844205B929A00D4EB1A /* ImplicitAnimation */,
-				D31B083F205B692C00D4EB1A /* CATransform3D */,
 				D31B083A205B5D0300D4EB1A /* CALayer */,
+				D31B083F205B692C00D4EB1A /* CATransform3D */,
+				D31B0844205B929A00D4EB1A /* ImplicitAnimation */,
+				D31B084B205BA71E00D4EB1A /* CALayerClock */,
+				D39CA8C2205BE17200D00A94 /* CABaseAnimation */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -1734,6 +1739,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D39CA8C2205BE17200D00A94 /* CABaseAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D39CA8C3205BE18500D00A94 /* SFCABasicAnimationViewController.swift */,
+				D39CA8C4205BE18500D00A94 /* SFCABasicAnimationViewController.xib */,
+			);
+			path = CABaseAnimation;
+			sourceTree = "<group>";
+		};
 		D3A4AA351FFC61D500BB4598 /* DragVC（抽屉效果） */ = {
 			isa = PBXGroup;
 			children = (
@@ -2217,6 +2231,7 @@
 				D308FE17202855D800B2B887 /* SFSystemPhotoViewController.xib in Resources */,
 				D32B97D71FF4CBDD00478265 /* SFNetworkStateViewController.xib in Resources */,
 				D3616A5E20410AB3009AE65F /* SFTransformViewController.xib in Resources */,
+				D39CA8C6205BE18500D00A94 /* SFCABasicAnimationViewController.xib in Resources */,
 				D3BACEA720575F8100CFCE2B /* SFContextStatusStackViewController.xib in Resources */,
 				D3B77A0620232CFB00A3D11B /* SFKeyedArchiverView.xib in Resources */,
 				D3F7CC702027320000C71BDD /* SFJSONViewController.xib in Resources */,
@@ -2376,6 +2391,7 @@
 				D39706DB1FF3795100946BB9 /* SFDefaultStatusViewController.swift in Sources */,
 				D392883C1FFCB1AE00086377 /* SFDragTableViewController.swift in Sources */,
 				D39320792057EAA0005C9E02 /* SFImageWaterMarkViewController.swift in Sources */,
+				D39CA8C5205BE18500D00A94 /* SFCABasicAnimationViewController.swift in Sources */,
 				D3B779F02023079100A3D11B /* SFPlistViewController.swift in Sources */,
 				D3113EF01FEC9160003EB527 /* SFTabBarController.swift in Sources */,
 				D39706DA1FF3795100946BB9 /* DefaultStatusProtocol.swift in Sources */,
