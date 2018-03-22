@@ -16,7 +16,7 @@ class SFImplicitAnimationViewController: UIViewController {
         super.viewDidLoad()
 
         layer = CALayer()
-        layer.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        layer.bounds = CGRect(x: 0, y: 100, width: 100, height: 100)
         layer.backgroundColor = UIColor.red.cgColor
         view.layer.addSublayer(layer)
         

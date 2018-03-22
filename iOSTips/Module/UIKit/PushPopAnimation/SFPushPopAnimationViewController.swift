@@ -13,6 +13,7 @@ class SFPushPopAnimationViewController: SFBaseViewController {
     override func viewDidLoad() {
         
         dataSource = [["仿AppleMusic转场动效": SFAppleMusicPushPopViewController()],]
+        
         super.viewDidLoad()
     }
 }

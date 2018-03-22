@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9B61CC116A25E97EB3C1F7C9 /* Pods_iOSTips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCED02B0EFD50F1EB32D742 /* Pods_iOSTips.framework */; };
+		D306A13F20620B57009F91CD /* SFGreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306A13E20620B57009F91CD /* SFGreenView.swift */; };
+		D306A16220620C79009F91CD /* SFDragUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306A16020620C79009F91CD /* SFDragUIViewViewController.swift */; };
+		D306A16320620C79009F91CD /* SFDragUIViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306A16120620C79009F91CD /* SFDragUIViewViewController.xib */; };
 		D308FE16202855D800B2B887 /* SFSystemPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308FE14202855D800B2B887 /* SFSystemPhotoViewController.swift */; };
 		D308FE17202855D800B2B887 /* SFSystemPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D308FE15202855D800B2B887 /* SFSystemPhotoViewController.xib */; };
 		D30904602029DC6E0004B554 /* SFDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D309045D2029DC6E0004B554 /* SFDelegateViewController.xib */; };
@@ -26,6 +29,8 @@
 		D318C4F42052789600D507BB /* SFDrawProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */; };
 		D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */; };
 		D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */; };
+		D318DD762061F20200FA5DC4 /* SFTransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D318DD742061F20200FA5DC4 /* SFTransformViewController.xib */; };
+		D318DD772061F20200FA5DC4 /* SFTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318DD752061F20200FA5DC4 /* SFTransformViewController.swift */; };
 		D31B083D205B5D1200D4EB1A /* SFCALayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B083B205B5D1200D4EB1A /* SFCALayerViewController.swift */; };
 		D31B083E205B5D1200D4EB1A /* SFCALayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31B083C205B5D1200D4EB1A /* SFCALayerViewController.xib */; };
 		D31B0842205B693C00D4EB1A /* SFCATransform3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B0840205B693C00D4EB1A /* SFCATransform3DViewController.swift */; };
@@ -41,6 +46,14 @@
 		D32486381FF485BC006EAACD /* SFNetworkStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32486371FF485BC006EAACD /* SFNetworkStateViewController.swift */; };
 		D324863B1FF4860C006EAACD /* SFNetworkStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32486391FF4860C006EAACD /* SFNetworkStateTableViewCell.swift */; };
 		D324863C1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D324863A1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib */; };
+		D326B4BD2060984E00D8EAEE /* SFImageFoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326B4BB2060984E00D8EAEE /* SFImageFoldViewController.swift */; };
+		D326B4BE2060984E00D8EAEE /* SFImageFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D326B4BC2060984E00D8EAEE /* SFImageFoldViewController.xib */; };
+		D326B4C32060A70000D8EAEE /* SFMusicShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326B4C12060A70000D8EAEE /* SFMusicShakeViewController.swift */; };
+		D326B4C42060A70000D8EAEE /* SFMusicShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D326B4C22060A70000D8EAEE /* SFMusicShakeViewController.xib */; };
+		D326B4C82060AC8700D8EAEE /* SFReplicatorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326B4C62060AC8700D8EAEE /* SFReplicatorDemoViewController.swift */; };
+		D326B4CC2060AD2F00D8EAEE /* SFReplicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326B4CB2060AD2F00D8EAEE /* SFReplicatorView.swift */; };
+		D326B4CE2060B3E000D8EAEE /* SFReplicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D326B4CD2060B3E000D8EAEE /* SFReplicatorView.xib */; };
+		D326B4E32060BF3100D8EAEE /* SFParticleEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326B4E22060BF3100D8EAEE /* SFParticleEffectsViewController.swift */; };
 		D32B97D31FF4CB1100478265 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = D32B97D01FF4CB1100478265 /* stop.png */; };
 		D32B97D41FF4CB1100478265 /* WWAN.png in Resources */ = {isa = PBXBuildFile; fileRef = D32B97D11FF4CB1100478265 /* WWAN.png */; };
 		D32B97D51FF4CB1100478265 /* Airport.png in Resources */ = {isa = PBXBuildFile; fileRef = D32B97D21FF4CB1100478265 /* Airport.png */; };
@@ -82,8 +95,6 @@
 		D3616A5B20410AB3009AE65F /* SFModalChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A5320410AB2009AE65F /* SFModalChildViewController.swift */; };
 		D3616A5C20410AB3009AE65F /* SFGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3616A5520410AB2009AE65F /* SFGestureViewController.xib */; };
 		D3616A5D20410AB3009AE65F /* SFGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A5620410AB2009AE65F /* SFGestureViewController.swift */; };
-		D3616A5E20410AB3009AE65F /* SFTransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3616A5820410AB3009AE65F /* SFTransformViewController.xib */; };
-		D3616A5F20410AB3009AE65F /* SFTransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A5920410AB3009AE65F /* SFTransformViewController.swift */; };
 		D3616A6320413A3F009AE65F /* SFPthreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A6120413A3F009AE65F /* SFPthreadViewController.swift */; };
 		D3616A6420413A3F009AE65F /* SFPthreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3616A6220413A3F009AE65F /* SFPthreadViewController.xib */; };
 		D3616A6820414280009AE65F /* SFThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A6620414280009AE65F /* SFThreadViewController.swift */; };
@@ -91,6 +102,15 @@
 		D3616A6B20414DB5009AE65F /* SFThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A6A20414DB5009AE65F /* SFThread.swift */; };
 		D3622411204408850058222B /* SFDeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362240F204408850058222B /* SFDeviceInfoViewController.swift */; };
 		D362241420440F1D0058222B /* UIDevice-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362241320440F1D0058222B /* UIDevice-Extension.swift */; };
+		D3630E24205F50260045382C /* SFCAKeyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E22205F50260045382C /* SFCAKeyAnimationViewController.swift */; };
+		D3630E25205F50260045382C /* SFCAKeyAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3630E23205F50260045382C /* SFCAKeyAnimationViewController.xib */; };
+		D3630E2A205F5B2A0045382C /* SFCATransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E28205F5B2A0045382C /* SFCATransitionViewController.swift */; };
+		D3630E2B205F5B2A0045382C /* SFCATransitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3630E29205F5B2A0045382C /* SFCATransitionViewController.xib */; };
+		D3630E2F205F5FAF0045382C /* SFCAAnimationGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E2D205F5FAF0045382C /* SFCAAnimationGroupViewController.swift */; };
+		D3630E30205F5FAF0045382C /* SFCAAnimationGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3630E2E205F5FAF0045382C /* SFCAAnimationGroupViewController.xib */; };
+		D3630E35205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E33205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift */; };
+		D3630E36205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3630E34205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib */; };
+		D3630E39205F63340045382C /* SFRedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E38205F63340045382C /* SFRedView.swift */; };
 		D3682F04201ECB3100A26284 /* SFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3113ED11FEC9160003EB527 /* SFBaseViewController.swift */; };
 		D3683048202C6C7800674E4F /* SFUploadSthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3683046202C6C7800674E4F /* SFUploadSthViewController.swift */; };
 		D3683049202C6C7800674E4F /* SFUploadSthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3683047202C6C7800674E4F /* SFUploadSthViewController.xib */; };
@@ -248,6 +268,9 @@
 		55CE09E6E1DC28449AABD7B5 /* Pods-iOSTips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTips/Pods-iOSTips.debug.xcconfig"; sourceTree = "<group>"; };
 		5CCED02B0EFD50F1EB32D742 /* Pods_iOSTips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D061E60C5965036355F45E3D /* Pods-iOSTips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTips.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTips/Pods-iOSTips.release.xcconfig"; sourceTree = "<group>"; };
+		D306A13E20620B57009F91CD /* SFGreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGreenView.swift; sourceTree = "<group>"; };
+		D306A16020620C79009F91CD /* SFDragUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDragUIViewViewController.swift; sourceTree = "<group>"; };
+		D306A16120620C79009F91CD /* SFDragUIViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDragUIViewViewController.xib; sourceTree = "<group>"; };
 		D308FE14202855D800B2B887 /* SFSystemPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSystemPhotoViewController.swift; sourceTree = "<group>"; };
 		D308FE15202855D800B2B887 /* SFSystemPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFSystemPhotoViewController.xib; sourceTree = "<group>"; };
 		D309045D2029DC6E0004B554 /* SFDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFDelegateViewController.xib; sourceTree = "<group>"; };
@@ -267,6 +290,8 @@
 		D318C4F22052789600D507BB /* SFDrawProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressViewController.swift; sourceTree = "<group>"; };
 		D318C4F32052789600D507BB /* SFDrawProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDrawProgressViewController.xib; sourceTree = "<group>"; };
 		D318C4F62052ADD700D507BB /* SFDrawProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDrawProgressView.swift; sourceTree = "<group>"; };
+		D318DD742061F20200FA5DC4 /* SFTransformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTransformViewController.xib; sourceTree = "<group>"; };
+		D318DD752061F20200FA5DC4 /* SFTransformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTransformViewController.swift; sourceTree = "<group>"; };
 		D31B083B205B5D1200D4EB1A /* SFCALayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCALayerViewController.swift; sourceTree = "<group>"; };
 		D31B083C205B5D1200D4EB1A /* SFCALayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCALayerViewController.xib; sourceTree = "<group>"; };
 		D31B0840205B693C00D4EB1A /* SFCATransform3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCATransform3DViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +309,14 @@
 		D32486371FF485BC006EAACD /* SFNetworkStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNetworkStateViewController.swift; sourceTree = "<group>"; };
 		D32486391FF4860C006EAACD /* SFNetworkStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNetworkStateTableViewCell.swift; sourceTree = "<group>"; };
 		D324863A1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFNetworkStateTableViewCell.xib; sourceTree = "<group>"; };
+		D326B4BB2060984E00D8EAEE /* SFImageFoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFImageFoldViewController.swift; sourceTree = "<group>"; };
+		D326B4BC2060984E00D8EAEE /* SFImageFoldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFImageFoldViewController.xib; sourceTree = "<group>"; };
+		D326B4C12060A70000D8EAEE /* SFMusicShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMusicShakeViewController.swift; sourceTree = "<group>"; };
+		D326B4C22060A70000D8EAEE /* SFMusicShakeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFMusicShakeViewController.xib; sourceTree = "<group>"; };
+		D326B4C62060AC8700D8EAEE /* SFReplicatorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFReplicatorDemoViewController.swift; sourceTree = "<group>"; };
+		D326B4CB2060AD2F00D8EAEE /* SFReplicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFReplicatorView.swift; sourceTree = "<group>"; };
+		D326B4CD2060B3E000D8EAEE /* SFReplicatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFReplicatorView.xib; sourceTree = "<group>"; };
+		D326B4E22060BF3100D8EAEE /* SFParticleEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFParticleEffectsViewController.swift; sourceTree = "<group>"; };
 		D32B97D01FF4CB1100478265 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		D32B97D11FF4CB1100478265 /* WWAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WWAN.png; sourceTree = "<group>"; };
 		D32B97D21FF4CB1100478265 /* Airport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Airport.png; sourceTree = "<group>"; };
@@ -325,8 +358,6 @@
 		D3616A5320410AB2009AE65F /* SFModalChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFModalChildViewController.swift; sourceTree = "<group>"; };
 		D3616A5520410AB2009AE65F /* SFGestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFGestureViewController.xib; sourceTree = "<group>"; };
 		D3616A5620410AB2009AE65F /* SFGestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGestureViewController.swift; sourceTree = "<group>"; };
-		D3616A5820410AB3009AE65F /* SFTransformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTransformViewController.xib; sourceTree = "<group>"; };
-		D3616A5920410AB3009AE65F /* SFTransformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTransformViewController.swift; sourceTree = "<group>"; };
 		D3616A6120413A3F009AE65F /* SFPthreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPthreadViewController.swift; sourceTree = "<group>"; };
 		D3616A6220413A3F009AE65F /* SFPthreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPthreadViewController.xib; sourceTree = "<group>"; };
 		D3616A6620414280009AE65F /* SFThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFThreadViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +365,15 @@
 		D3616A6A20414DB5009AE65F /* SFThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFThread.swift; sourceTree = "<group>"; };
 		D362240F204408850058222B /* SFDeviceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDeviceInfoViewController.swift; sourceTree = "<group>"; };
 		D362241320440F1D0058222B /* UIDevice-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice-Extension.swift"; sourceTree = "<group>"; };
+		D3630E22205F50260045382C /* SFCAKeyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCAKeyAnimationViewController.swift; sourceTree = "<group>"; };
+		D3630E23205F50260045382C /* SFCAKeyAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCAKeyAnimationViewController.xib; sourceTree = "<group>"; };
+		D3630E28205F5B2A0045382C /* SFCATransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCATransitionViewController.swift; sourceTree = "<group>"; };
+		D3630E29205F5B2A0045382C /* SFCATransitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCATransitionViewController.xib; sourceTree = "<group>"; };
+		D3630E2D205F5FAF0045382C /* SFCAAnimationGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCAAnimationGroupViewController.swift; sourceTree = "<group>"; };
+		D3630E2E205F5FAF0045382C /* SFCAAnimationGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCAAnimationGroupViewController.xib; sourceTree = "<group>"; };
+		D3630E33205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFViewAnimAndCoreAnimDifferentViewController.swift; sourceTree = "<group>"; };
+		D3630E34205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFViewAnimAndCoreAnimDifferentViewController.xib; sourceTree = "<group>"; };
+		D3630E38205F63340045382C /* SFRedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRedView.swift; sourceTree = "<group>"; };
 		D3683046202C6C7800674E4F /* SFUploadSthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUploadSthViewController.swift; sourceTree = "<group>"; };
 		D3683047202C6C7800674E4F /* SFUploadSthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFUploadSthViewController.xib; sourceTree = "<group>"; };
 		D368304A202C6CC800674E4F /* SFUploadTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUploadTaskViewController.swift; sourceTree = "<group>"; };
@@ -639,6 +679,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D318DD702061F20200FA5DC4 /* UIViewTransform */ = {
+			isa = PBXGroup;
+			children = (
+				D318DD712061F20200FA5DC4 /* DragUIView */,
+				D318DD732061F20200FA5DC4 /* Transform */,
+			);
+			path = UIViewTransform;
+			sourceTree = "<group>";
+		};
+		D318DD712061F20200FA5DC4 /* DragUIView */ = {
+			isa = PBXGroup;
+			children = (
+				D318DD722061F20200FA5DC4 /* View */,
+				D306A16020620C79009F91CD /* SFDragUIViewViewController.swift */,
+				D306A16120620C79009F91CD /* SFDragUIViewViewController.xib */,
+			);
+			path = DragUIView;
+			sourceTree = "<group>";
+		};
+		D318DD722061F20200FA5DC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D306A13E20620B57009F91CD /* SFGreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D318DD732061F20200FA5DC4 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				D318DD742061F20200FA5DC4 /* SFTransformViewController.xib */,
+				D318DD752061F20200FA5DC4 /* SFTransformViewController.swift */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
 		D31B0839205B5CF300D4EB1A /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +723,14 @@
 				D31B0844205B929A00D4EB1A /* ImplicitAnimation */,
 				D31B084B205BA71E00D4EB1A /* CALayerClock */,
 				D39CA8C2205BE17200D00A94 /* CABaseAnimation */,
+				D3630E21205F50160045382C /* CAKeyFrameAnimation */,
+				D3630E27205F5B1D0045382C /* CATransition */,
+				D3630E2C205F5FA20045382C /* CAAnimationGroup */,
+				D3630E32205F62F50045382C /* ViewAnimAndCoreAnimDifferent */,
+				D326B4BA2060983E00D8EAEE /* ImageFold */,
+				D326B4C02060A6EC00D8EAEE /* MusicShake */,
+				D326B4C52060AC6600D8EAEE /* ReplicatorDemo */,
+				D326B4DB2060BEF400D8EAEE /* ParticleEffects */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -712,6 +796,59 @@
 				D32486331FF46FE3006EAACD /* iOSTips-Bridging-Header.h */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		D326B4BA2060983E00D8EAEE /* ImageFold */ = {
+			isa = PBXGroup;
+			children = (
+				D326B4BB2060984E00D8EAEE /* SFImageFoldViewController.swift */,
+				D326B4BC2060984E00D8EAEE /* SFImageFoldViewController.xib */,
+			);
+			path = ImageFold;
+			sourceTree = "<group>";
+		};
+		D326B4C02060A6EC00D8EAEE /* MusicShake */ = {
+			isa = PBXGroup;
+			children = (
+				D326B4C12060A70000D8EAEE /* SFMusicShakeViewController.swift */,
+				D326B4C22060A70000D8EAEE /* SFMusicShakeViewController.xib */,
+			);
+			path = MusicShake;
+			sourceTree = "<group>";
+		};
+		D326B4C52060AC6600D8EAEE /* ReplicatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D326B4CA2060AD1A00D8EAEE /* View */,
+				D326B4C62060AC8700D8EAEE /* SFReplicatorDemoViewController.swift */,
+			);
+			path = ReplicatorDemo;
+			sourceTree = "<group>";
+		};
+		D326B4CA2060AD1A00D8EAEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D326B4CB2060AD2F00D8EAEE /* SFReplicatorView.swift */,
+				D326B4CD2060B3E000D8EAEE /* SFReplicatorView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D326B4DB2060BEF400D8EAEE /* ParticleEffects */ = {
+			isa = PBXGroup;
+			children = (
+				D326B4DC2060BEF400D8EAEE /* View */,
+				D326B4E22060BF3100D8EAEE /* SFParticleEffectsViewController.swift */,
+			);
+			name = ParticleEffects;
+			path = iOSTips/Module/UIKit/CoreAnimation/ParticleEffects;
+			sourceTree = SOURCE_ROOT;
+		};
+		D326B4DC2060BEF400D8EAEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D32B97CF1FF4CB1100478265 /* Resource */ = {
@@ -1062,15 +1199,6 @@
 			path = UIGestureRecognizer;
 			sourceTree = "<group>";
 		};
-		D3616A5720410AB3009AE65F /* Transform */ = {
-			isa = PBXGroup;
-			children = (
-				D3616A5820410AB3009AE65F /* SFTransformViewController.xib */,
-				D3616A5920410AB3009AE65F /* SFTransformViewController.swift */,
-			);
-			path = Transform;
-			sourceTree = "<group>";
-		};
 		D3616A6020413A32009AE65F /* Pthread */ = {
 			isa = PBXGroup;
 			children = (
@@ -1097,6 +1225,51 @@
 				D362240F204408850058222B /* SFDeviceInfoViewController.swift */,
 			);
 			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		D3630E21205F50160045382C /* CAKeyFrameAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D3630E22205F50260045382C /* SFCAKeyAnimationViewController.swift */,
+				D3630E23205F50260045382C /* SFCAKeyAnimationViewController.xib */,
+			);
+			path = CAKeyFrameAnimation;
+			sourceTree = "<group>";
+		};
+		D3630E27205F5B1D0045382C /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				D3630E28205F5B2A0045382C /* SFCATransitionViewController.swift */,
+				D3630E29205F5B2A0045382C /* SFCATransitionViewController.xib */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		D3630E2C205F5FA20045382C /* CAAnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				D3630E2D205F5FAF0045382C /* SFCAAnimationGroupViewController.swift */,
+				D3630E2E205F5FAF0045382C /* SFCAAnimationGroupViewController.xib */,
+			);
+			path = CAAnimationGroup;
+			sourceTree = "<group>";
+		};
+		D3630E32205F62F50045382C /* ViewAnimAndCoreAnimDifferent */ = {
+			isa = PBXGroup;
+			children = (
+				D3630E33205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift */,
+				D3630E34205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib */,
+				D3630E37205F63260045382C /* View */,
+			);
+			path = ViewAnimAndCoreAnimDifferent;
+			sourceTree = "<group>";
+		};
+		D3630E37205F63260045382C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3630E38205F63340045382C /* SFRedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D3683044202C6C7800674E4F /* MultipleParam */ = {
@@ -1384,10 +1557,10 @@
 		D397066A1FF3795100946BB9 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D318DD702061F20200FA5DC4 /* UIViewTransform */,
 				D31B0839205B5CF300D4EB1A /* CoreAnimation */,
 				D3337F5B2051519900B6EF74 /* Quartz2D */,
 				D3616A5120410AB2009AE65F /* Modal */,
-				D3616A5720410AB3009AE65F /* Transform */,
 				D3616A5420410AB2009AE65F /* UIGestureRecognizer */,
 				D39665B42029B0C8001355AE /* Alert */,
 				D3DE1C7F200CBA8400EC732C /* ModalAnimation */,
@@ -2183,6 +2356,7 @@
 				D39706CE1FF3795100946BB9 /* baxi.gif in Resources */,
 				D30904602029DC6E0004B554 /* SFDelegateViewController.xib in Resources */,
 				D39706DC1FF3795100946BB9 /* image.png in Resources */,
+				D326B4CE2060B3E000D8EAEE /* SFReplicatorView.xib in Resources */,
 				D3616A6920414280009AE65F /* SFThreadViewController.xib in Resources */,
 				D32B97D31FF4CB1100478265 /* stop.png in Resources */,
 				D39706C41FF3795100946BB9 /* ydl.gif in Resources */,
@@ -2192,6 +2366,7 @@
 				D39706CA1FF3795100946BB9 /* deguo.gif in Resources */,
 				D32B97D51FF4CB1100478265 /* Airport.png in Resources */,
 				D393207A2057EAA0005C9E02 /* SFImageWaterMarkViewController.xib in Resources */,
+				D3630E36205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib in Resources */,
 				D31B084A205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib in Resources */,
 				D39166CC20561691004558CF /* SFDisplayLinkViewController.xib in Resources */,
 				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
@@ -2208,11 +2383,13 @@
 				D3B77A0120232A4100A3D11B /* SFNSKeyedArchiverViewController.xib in Resources */,
 				D39706C81FF3795100946BB9 /* hanguo.gif in Resources */,
 				D31B084F205BA73000D4EB1A /* SFCALayerClockViewController.xib in Resources */,
+				D326B4BE2060984E00D8EAEE /* SFImageFoldViewController.xib in Resources */,
 				D39706D21FF3795100946BB9 /* flags.plist in Resources */,
 				D39166B620560297004558CF /* SFPieChartViewController.xib in Resources */,
 				D37DC182205100EF00C05481 /* 1.JPG in Resources */,
 				D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */,
 				D31B0843205B693C00D4EB1A /* SFCATransform3DViewController.xib in Resources */,
+				D326B4C42060A70000D8EAEE /* SFMusicShakeViewController.xib in Resources */,
 				D3F55F881FE4FCE300EC214F /* LaunchScreen.storyboard in Resources */,
 				D39706D01FF3795100946BB9 /* ying.gif in Resources */,
 				D3E5BD5C20343073003DA140 /* SFSystemSettingViewController.xib in Resources */,
@@ -2221,6 +2398,7 @@
 				D3B779F2202307F300A3D11B /* SFPlistViewController.xib in Resources */,
 				D35BCE202024403A00047639 /* NibTableViewCell.xib in Resources */,
 				D39665B120295163001355AE /* SFOutputStreamViewController.xib in Resources */,
+				D3630E30205F5FAF0045382C /* SFCAAnimationGroupViewController.xib in Resources */,
 				D39706E31FF3795100946BB9 /* liuxinjia.JPG in Resources */,
 				D3616A6420413A3F009AE65F /* SFPthreadViewController.xib in Resources */,
 				D3F7CC752027331A00C71BDD /* SFJSONSerializationViewController.xib in Resources */,
@@ -2230,11 +2408,11 @@
 				D35BCE292024403A00047639 /* ProtocolButton.xib in Resources */,
 				D308FE17202855D800B2B887 /* SFSystemPhotoViewController.xib in Resources */,
 				D32B97D71FF4CBDD00478265 /* SFNetworkStateViewController.xib in Resources */,
-				D3616A5E20410AB3009AE65F /* SFTransformViewController.xib in Resources */,
 				D39CA8C6205BE18500D00A94 /* SFCABasicAnimationViewController.xib in Resources */,
 				D3BACEA720575F8100CFCE2B /* SFContextStatusStackViewController.xib in Resources */,
 				D3B77A0620232CFB00A3D11B /* SFKeyedArchiverView.xib in Resources */,
 				D3F7CC702027320000C71BDD /* SFJSONViewController.xib in Resources */,
+				D3630E25205F50260045382C /* SFCAKeyAnimationViewController.xib in Resources */,
 				D3B77A0B20232EF200A3D11B /* SFNSCacheViewController.xib in Resources */,
 				D35BCE1F2024403A00047639 /* NibCollectionViewCell.xib in Resources */,
 				D35BCE282024403A00047639 /* ProtocolView.xib in Resources */,
@@ -2249,6 +2427,7 @@
 				D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */,
 				D356DB0F202D98FB00514C1B /* SFAFGetPostViewController.xib in Resources */,
 				D39706E21FF3795100946BB9 /* apps.plist in Resources */,
+				D306A16320620C79009F91CD /* SFDragUIViewViewController.xib in Resources */,
 				D3683054202C780D00674E4F /* SFZipViewController.xib in Resources */,
 				D39665A6202950FA001355AE /* SFGetPostViewController.xib in Resources */,
 				D36D7E6B20439B22006A9628 /* NavigationTitleView.xib in Resources */,
@@ -2259,12 +2438,14 @@
 				D30904652029DCB10004B554 /* SFClosureViewController.xib in Resources */,
 				D39706C51FF3795100946BB9 /* putaoya.gif in Resources */,
 				D39706E11FF3795100946BB9 /* ImageTableViewCell.xib in Resources */,
+				D3630E2B205F5B2A0045382C /* SFCATransitionViewController.xib in Resources */,
 				D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */,
 				D32DAEE520401BA500BFA18E /* SFResponseViewController.xib in Resources */,
 				D39706CC1FF3795100946BB9 /* faguo.gif in Resources */,
 				D3683049202C6C7800674E4F /* SFUploadSthViewController.xib in Resources */,
 				D39706C91FF3795100946BB9 /* ruishi.gif in Resources */,
 				D3F55F851FE4FCE300EC214F /* Assets.xcassets in Resources */,
+				D318DD762061F20200FA5DC4 /* SFTransformViewController.xib in Resources */,
 				D35BCE1A2024403A00047639 /* SFShakeAnimationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2339,7 +2520,9 @@
 				D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */,
 				D318C4EF20521DE900D507BB /* SFDrawView.swift in Sources */,
 				D39706B71FF3795100946BB9 /* SFUILabelViewController.swift in Sources */,
+				D306A13F20620B57009F91CD /* SFGreenView.swift in Sources */,
 				D3DE1C8B200CBC0600EC732C /* SFModalAniamtionViewController.swift in Sources */,
+				D326B4BD2060984E00D8EAEE /* SFImageFoldViewController.swift in Sources */,
 				D3435A5C2058AE1600DCF371 /* SFScreenShotViewController.swift in Sources */,
 				D39030F81FF50D3900E5633F /* SFSafeAreaViewController.swift in Sources */,
 				D35BCE212024403A00047639 /* NibTableViewCell.swift in Sources */,
@@ -2376,6 +2559,7 @@
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
 				D3337F5F205151B700B6EF74 /* SFBaseGraphicsViewController.swift in Sources */,
+				D3630E2F205F5FAF0045382C /* SFCAAnimationGroupViewController.swift in Sources */,
 				D31B084E205BA73000D4EB1A /* SFCALayerClockViewController.swift in Sources */,
 				D35BCE262024403A00047639 /* ProtocolView.swift in Sources */,
 				D3BACEA920575F9200CFCE2B /* SFContextStatusStackView.swift in Sources */,
@@ -2393,6 +2577,8 @@
 				D39320792057EAA0005C9E02 /* SFImageWaterMarkViewController.swift in Sources */,
 				D39CA8C5205BE18500D00A94 /* SFCABasicAnimationViewController.swift in Sources */,
 				D3B779F02023079100A3D11B /* SFPlistViewController.swift in Sources */,
+				D306A16220620C79009F91CD /* SFDragUIViewViewController.swift in Sources */,
+				D326B4E32060BF3100D8EAEE /* SFParticleEffectsViewController.swift in Sources */,
 				D3113EF01FEC9160003EB527 /* SFTabBarController.swift in Sources */,
 				D39706DA1FF3795100946BB9 /* DefaultStatusProtocol.swift in Sources */,
 				D3B7DB341FE7E1C700F67EC8 /* UILabel-Extension.swift in Sources */,
@@ -2413,6 +2599,7 @@
 				D3DD9727204E2C500065E9B6 /* SFCustomThread.swift in Sources */,
 				D3B27E8520187ADA00B5C832 /* SFLayoutGuideViewController.swift in Sources */,
 				D39166C220560F85004558CF /* SFDrawTextView.swift in Sources */,
+				D3630E2A205F5B2A0045382C /* SFCATransitionViewController.swift in Sources */,
 				D3C4A3D52046CF6800A64F0C /* UIImage-Extension.swift in Sources */,
 				D30904642029DCB10004B554 /* SFClosureViewController.swift in Sources */,
 				D39706E01FF3795100946BB9 /* ImageTableViewCell.swift in Sources */,
@@ -2427,6 +2614,8 @@
 				D308FE16202855D800B2B887 /* SFSystemPhotoViewController.swift in Sources */,
 				D39706DE1FF3795100946BB9 /* SFImageViewController.swift in Sources */,
 				D39665A7202950FA001355AE /* SFGetPostViewController.swift in Sources */,
+				D326B4CC2060AD2F00D8EAEE /* SFReplicatorView.swift in Sources */,
+				D3630E39205F63340045382C /* SFRedView.swift in Sources */,
 				D35BCE252024403A00047639 /* SFProtocolViewController.swift in Sources */,
 				D3FC685E20030A06003B924C /* SFTipsViewController.swift in Sources */,
 				D30904612029DC6E0004B554 /* SFDelegateViewController.swift in Sources */,
@@ -2440,7 +2629,6 @@
 				D3683052202C780200674E4F /* SFZipViewController.swift in Sources */,
 				D3E5BD5320342D01003DA140 /* SFRuntimeViewController.swift in Sources */,
 				D3A4AA5A1FFCAEEA00BB4598 /* SFDragDemoViewController.swift in Sources */,
-				D3616A5F20410AB3009AE65F /* SFTransformViewController.swift in Sources */,
 				D39166CB20561691004558CF /* SFDisplayLinkViewController.swift in Sources */,
 				D394497C2005B1B800405C1F /* SFActivityIndicatorViewController.swift in Sources */,
 				D35BCE1B2024403A00047639 /* SFShakeAnimationViewController.swift in Sources */,
@@ -2452,6 +2640,7 @@
 				D39706DF1FF3795100946BB9 /* ImageModel.swift in Sources */,
 				D39706BB1FF3795100946BB9 /* SFWaterFallLayout.swift in Sources */,
 				D36D7E6A20439B21006A9628 /* NavigationTitleView.swift in Sources */,
+				D3630E24205F50260045382C /* SFCAKeyAnimationViewController.swift in Sources */,
 				D3113EEE1FEC9160003EB527 /* SFUIKitViewController.swift in Sources */,
 				D39706B91FF3795100946BB9 /* SFEditTableViewViewController.swift in Sources */,
 				D32486381FF485BC006EAACD /* SFNetworkStateViewController.swift in Sources */,
@@ -2462,10 +2651,14 @@
 				D39665B020295163001355AE /* SFOutputStreamViewController.swift in Sources */,
 				D3B77A0A20232EF200A3D11B /* SFNSCacheViewController.swift in Sources */,
 				D39665AF20295163001355AE /* SFFileHandleViewController.swift in Sources */,
+				D326B4C82060AC8700D8EAEE /* SFReplicatorDemoViewController.swift in Sources */,
 				D3FC685C200309FE003B924C /* SFTipsNavigationController.swift in Sources */,
+				D318DD772061F20200FA5DC4 /* SFTransformViewController.swift in Sources */,
+				D3630E35205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift in Sources */,
 				D3DD9729204E300E0065E9B6 /* SFCustomOperation.swift in Sources */,
 				D3B779EA202306E700A3D11B /* SFNSObjectViewController.swift in Sources */,
 				D39706BC1FF3795100946BB9 /* SFWaterFallViewController.swift in Sources */,
+				D326B4C32060A70000D8EAEE /* SFMusicShakeViewController.swift in Sources */,
 				D39706D41FF3795100946BB9 /* FlagView.swift in Sources */,
 				D3DE1C83200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift in Sources */,
 				D3113EEC1FEC9160003EB527 /* SFFrameworkNavigationController.swift in Sources */,

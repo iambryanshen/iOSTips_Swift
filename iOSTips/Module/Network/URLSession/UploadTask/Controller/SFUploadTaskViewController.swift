@@ -15,6 +15,7 @@ class SFUploadTaskViewController: SFBaseViewController {
         dataSource = [["上传资源": SFUploadSthViewController(),
                        "多值参数": SFMultipleParamViewController(),
                        "文件的压缩与解压缩": SFZipViewController(),],]
+        
         super.viewDidLoad()
     }
 }

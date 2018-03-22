@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFCABasicAnimationViewController" customModule="iOSTips" customModuleProvider="target">
             <connections>
+                <outlet property="heartImageView" destination="2hO-gW-Wiw" id="kei-DQ-Jnf"/>
                 <outlet property="redView" destination="Rzt-rM-YR4" id="XWN-b3-iTu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,10 +27,45 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w2S-DG-Xxp">
+                    <rect key="frame" x="136" y="298.5" width="102" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPT-gj-DMz">
+                            <rect key="frame" x="0.0" y="0.0" width="102" height="30"/>
+                            <state key="normal" title="BaseAnimation"/>
+                            <connections>
+                                <action selector="baseAnimation:" destination="-1" eventType="touchUpInside" id="g5H-U2-FHg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeN-Hg-53d">
+                            <rect key="frame" x="0.0" y="40" width="102" height="30"/>
+                            <state key="normal" title="心跳效果"/>
+                            <connections>
+                                <action selector="heartJump:" destination="-1" eventType="touchUpInside" id="N7i-bb-KsG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="2hO-gW-Wiw">
+                    <rect key="frame" x="87" y="418.5" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="kHb-ae-XBv"/>
+                        <constraint firstAttribute="height" constant="200" id="z5a-PP-JrA"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w2S-DG-Xxp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="16G-QT-uUT"/>
+                <constraint firstItem="w2S-DG-Xxp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g4i-v0-jNv"/>
+                <constraint firstItem="2hO-gW-Wiw" firstAttribute="top" secondItem="w2S-DG-Xxp" secondAttribute="bottom" constant="50" id="gLa-EX-HUX"/>
+                <constraint firstItem="2hO-gW-Wiw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rg7-Jq-ZSd"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="heart" width="200" height="200"/>
+    </resources>
 </document>
