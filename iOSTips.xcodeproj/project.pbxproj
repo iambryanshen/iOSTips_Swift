@@ -100,6 +100,10 @@
 		D3616A6820414280009AE65F /* SFThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A6620414280009AE65F /* SFThreadViewController.swift */; };
 		D3616A6920414280009AE65F /* SFThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3616A6720414280009AE65F /* SFThreadViewController.xib */; };
 		D3616A6B20414DB5009AE65F /* SFThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3616A6A20414DB5009AE65F /* SFThread.swift */; };
+		D361E5CF2068DD4D007BE36E /* SFGCDTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361E5CD2068DD4D007BE36E /* SFGCDTimerViewController.swift */; };
+		D361E5D02068DD4D007BE36E /* SFGCDTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D361E5CE2068DD4D007BE36E /* SFGCDTimerViewController.xib */; };
+		D361E5D32068EAEA007BE36E /* SFTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361E5D12068EAEA007BE36E /* SFTimerViewController.swift */; };
+		D361E5D42068EAEA007BE36E /* SFTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D361E5D22068EAEA007BE36E /* SFTimerViewController.xib */; };
 		D3622411204408850058222B /* SFDeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362240F204408850058222B /* SFDeviceInfoViewController.swift */; };
 		D362241420440F1D0058222B /* UIDevice-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D362241320440F1D0058222B /* UIDevice-Extension.swift */; };
 		D3630E24205F50260045382C /* SFCAKeyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3630E22205F50260045382C /* SFCAKeyAnimationViewController.swift */; };
@@ -234,6 +238,9 @@
 		D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */; };
 		D3CEABAB203E5CD30054D25E /* SFUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */; };
 		D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABAE203E66C10054D25E /* SFPrint.swift */; };
+		D3DC5446206894D1007BE1D1 /* SFRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC5445206894D0007BE1D1 /* SFRuntimeViewController.swift */; };
+		D3DC54562068A37B007BE1D1 /* SFAudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */; };
+		D3DC54572068A37B007BE1D1 /* SFAudioRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */; };
 		D3DD9727204E2C500065E9B6 /* SFCustomThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD9726204E2C500065E9B6 /* SFCustomThread.swift */; };
 		D3DD9729204E300E0065E9B6 /* SFCustomOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */; };
 		D3DE1C83200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C7E200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift */; };
@@ -241,7 +248,6 @@
 		D3DE1C89200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C88200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift */; };
 		D3DE1C8B200CBC0600EC732C /* SFModalAniamtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C8A200CBC0600EC732C /* SFModalAniamtionViewController.swift */; };
 		D3DE1C8D200CBD9900EC732C /* SFModalPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE1C8C200CBD9900EC732C /* SFModalPresentedViewController.swift */; };
-		D3E5BD5320342D01003DA140 /* SFRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5BD5220342D01003DA140 /* SFRuntimeViewController.swift */; };
 		D3E5BD5620342D63003DA140 /* SFAppJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5BD5420342D63003DA140 /* SFAppJumpViewController.swift */; };
 		D3E5BD5720342D63003DA140 /* SFAppJumpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E5BD5520342D63003DA140 /* SFAppJumpViewController.xib */; };
 		D3E5BD5B20343073003DA140 /* SFSystemSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5BD5920343073003DA140 /* SFSystemSettingViewController.swift */; };
@@ -363,6 +369,10 @@
 		D3616A6620414280009AE65F /* SFThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFThreadViewController.swift; sourceTree = "<group>"; };
 		D3616A6720414280009AE65F /* SFThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFThreadViewController.xib; sourceTree = "<group>"; };
 		D3616A6A20414DB5009AE65F /* SFThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFThread.swift; sourceTree = "<group>"; };
+		D361E5CD2068DD4D007BE36E /* SFGCDTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGCDTimerViewController.swift; sourceTree = "<group>"; };
+		D361E5CE2068DD4D007BE36E /* SFGCDTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFGCDTimerViewController.xib; sourceTree = "<group>"; };
+		D361E5D12068EAEA007BE36E /* SFTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTimerViewController.swift; sourceTree = "<group>"; };
+		D361E5D22068EAEA007BE36E /* SFTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFTimerViewController.xib; sourceTree = "<group>"; };
 		D362240F204408850058222B /* SFDeviceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDeviceInfoViewController.swift; sourceTree = "<group>"; };
 		D362241320440F1D0058222B /* UIDevice-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice-Extension.swift"; sourceTree = "<group>"; };
 		D3630E22205F50260045382C /* SFCAKeyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCAKeyAnimationViewController.swift; sourceTree = "<group>"; };
@@ -496,6 +506,9 @@
 		D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUploadViewController.swift; sourceTree = "<group>"; };
 		D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFUploadViewController.xib; sourceTree = "<group>"; };
 		D3CEABAE203E66C10054D25E /* SFPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrint.swift; sourceTree = "<group>"; };
+		D3DC5445206894D0007BE1D1 /* SFRuntimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRuntimeViewController.swift; sourceTree = "<group>"; };
+		D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAudioRecorderViewController.swift; sourceTree = "<group>"; };
+		D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFAudioRecorderViewController.xib; sourceTree = "<group>"; };
 		D3DD9726204E2C500065E9B6 /* SFCustomThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCustomThread.swift; sourceTree = "<group>"; };
 		D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCustomOperation.swift; sourceTree = "<group>"; };
 		D3DE1C7E200CBA8400EC732C /* SFAppleMusicPushPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppleMusicPushPopViewController.swift; sourceTree = "<group>"; };
@@ -503,7 +516,6 @@
 		D3DE1C88200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFModalFadeInFadeOutViewController.swift; sourceTree = "<group>"; };
 		D3DE1C8A200CBC0600EC732C /* SFModalAniamtionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFModalAniamtionViewController.swift; sourceTree = "<group>"; };
 		D3DE1C8C200CBD9900EC732C /* SFModalPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFModalPresentedViewController.swift; sourceTree = "<group>"; };
-		D3E5BD5220342D01003DA140 /* SFRuntimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRuntimeViewController.swift; sourceTree = "<group>"; };
 		D3E5BD5420342D63003DA140 /* SFAppJumpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppJumpViewController.swift; sourceTree = "<group>"; };
 		D3E5BD5520342D63003DA140 /* SFAppJumpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFAppJumpViewController.xib; sourceTree = "<group>"; };
 		D3E5BD5920343073003DA140 /* SFSystemSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSystemSettingViewController.swift; sourceTree = "<group>"; };
@@ -1219,6 +1231,24 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
+		D361E5CB2068DC47007BE36E /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				D361E5D12068EAEA007BE36E /* SFTimerViewController.swift */,
+				D361E5D22068EAEA007BE36E /* SFTimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		D361E5CC2068DD42007BE36E /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D361E5CD2068DD4D007BE36E /* SFGCDTimerViewController.swift */,
+				D361E5CE2068DD4D007BE36E /* SFGCDTimerViewController.xib */,
+			);
+			path = GCDTimer;
+			sourceTree = "<group>";
+		};
 		D362240E204408710058222B /* DeviceInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1432,6 +1462,8 @@
 		D39166C320561625004558CF /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				D361E5CC2068DD42007BE36E /* GCDTimer */,
+				D361E5CB2068DC47007BE36E /* Timer */,
 				D39166C420561625004558CF /* CADisplayLink */,
 			);
 			path = Timer;
@@ -2074,6 +2106,23 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D3DC544E2068A354007BE1D1 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC544F2068A354007BE1D1 /* AudioRecorder */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		D3DC544F2068A354007BE1D1 /* AudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */,
+				D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */,
+			);
+			path = AudioRecorder;
+			sourceTree = "<group>";
+		};
 		D3DE1C7B200CBA8400EC732C /* PushPopAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2128,17 +2177,9 @@
 		D3E5BD5020342CE9003DA140 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				D3E5BD5120342CE9003DA140 /* Controller */,
+				D3DC5445206894D0007BE1D1 /* SFRuntimeViewController.swift */,
 			);
 			path = Runtime;
-			sourceTree = "<group>";
-		};
-		D3E5BD5120342CE9003DA140 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D3E5BD5220342D01003DA140 /* SFRuntimeViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		D3E5BD5820342FEB003DA140 /* SystemSetting */ = {
@@ -2268,6 +2309,7 @@
 		D3FC685F20030A74003B924C /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				D3DC544E2068A354007BE1D1 /* Audio */,
 				D362240E204408710058222B /* DeviceInfo */,
 				D3B9461620438B5500DFBAC9 /* FatherChildVC */,
 				D3E5BD5820342FEB003DA140 /* SystemSetting */,
@@ -2360,6 +2402,7 @@
 				D3616A6920414280009AE65F /* SFThreadViewController.xib in Resources */,
 				D32B97D31FF4CB1100478265 /* stop.png in Resources */,
 				D39706C41FF3795100946BB9 /* ydl.gif in Resources */,
+				D361E5D02068DD4D007BE36E /* SFGCDTimerViewController.xib in Resources */,
 				D3BACEAF205775D300CFCE2B /* SFContextMatrixOperationsViewController.xib in Resources */,
 				D3616A5C20410AB3009AE65F /* SFGestureViewController.xib in Resources */,
 				D32B97D41FF4CB1100478265 /* WWAN.png in Resources */,
@@ -2417,8 +2460,10 @@
 				D35BCE1F2024403A00047639 /* NibCollectionViewCell.xib in Resources */,
 				D35BCE282024403A00047639 /* ProtocolView.xib in Resources */,
 				D3683058202C79EE00674E4F /* icon.JPG in Resources */,
+				D3DC54572068A37B007BE1D1 /* SFAudioRecorderViewController.xib in Resources */,
 				D39706CB1FF3795100946BB9 /* agt.gif in Resources */,
 				D324863C1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib in Resources */,
+				D361E5D42068EAEA007BE36E /* SFTimerViewController.xib in Resources */,
 				D39706D61FF3795100946BB9 /* FlagView.xib in Resources */,
 				D39706CD1FF3795100946BB9 /* xiby.gif in Resources */,
 				D39706C71FF3795100946BB9 /* wlgui.gif in Resources */,
@@ -2511,6 +2556,7 @@
 				D362241420440F1D0058222B /* UIDevice-Extension.swift in Sources */,
 				D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */,
 				D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */,
+				D361E5CF2068DD4D007BE36E /* SFGCDTimerViewController.swift in Sources */,
 				D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */,
 				D31587842044F7D800C8B66E /* SFApplyGroupViewController.swift in Sources */,
 				D3DE1C89200CBBC500EC732C /* SFModalFadeInFadeOutViewController.swift in Sources */,
@@ -2557,6 +2603,7 @@
 				D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */,
 				D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */,
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
+				D361E5D32068EAEA007BE36E /* SFTimerViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
 				D3337F5F205151B700B6EF74 /* SFBaseGraphicsViewController.swift in Sources */,
 				D3630E2F205F5FAF0045382C /* SFCAAnimationGroupViewController.swift in Sources */,
@@ -2566,6 +2613,7 @@
 				D31B0842205B693C00D4EB1A /* SFCATransform3DViewController.swift in Sources */,
 				D39706BA1FF3795100946BB9 /* SFEditTableView.swift in Sources */,
 				D31B083D205B5D1200D4EB1A /* SFCALayerViewController.swift in Sources */,
+				D3DC54562068A37B007BE1D1 /* SFAudioRecorderViewController.swift in Sources */,
 				D3622411204408850058222B /* SFDeviceInfoViewController.swift in Sources */,
 				D35BCE222024403A00047639 /* CodeTableViewCell.swift in Sources */,
 				D3616A6320413A3F009AE65F /* SFPthreadViewController.swift in Sources */,
@@ -2627,7 +2675,6 @@
 				D3682F04201ECB3100A26284 /* SFBaseViewController.swift in Sources */,
 				D3F55F7E1FE4FCE300EC214F /* AppDelegate.swift in Sources */,
 				D3683052202C780200674E4F /* SFZipViewController.swift in Sources */,
-				D3E5BD5320342D01003DA140 /* SFRuntimeViewController.swift in Sources */,
 				D3A4AA5A1FFCAEEA00BB4598 /* SFDragDemoViewController.swift in Sources */,
 				D39166CB20561691004558CF /* SFDisplayLinkViewController.swift in Sources */,
 				D394497C2005B1B800405C1F /* SFActivityIndicatorViewController.swift in Sources */,
@@ -2653,6 +2700,7 @@
 				D39665AF20295163001355AE /* SFFileHandleViewController.swift in Sources */,
 				D326B4C82060AC8700D8EAEE /* SFReplicatorDemoViewController.swift in Sources */,
 				D3FC685C200309FE003B924C /* SFTipsNavigationController.swift in Sources */,
+				D3DC5446206894D1007BE1D1 /* SFRuntimeViewController.swift in Sources */,
 				D318DD772061F20200FA5DC4 /* SFTransformViewController.swift in Sources */,
 				D3630E35205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.swift in Sources */,
 				D3DD9729204E300E0065E9B6 /* SFCustomOperation.swift in Sources */,

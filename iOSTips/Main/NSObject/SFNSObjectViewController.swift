@@ -20,7 +20,9 @@ class SFNSObjectViewController: SFBaseViewController {
                        "NSCache": SFNSCacheViewController(),
                        ],
                       
-                      ["CADisplayLink": SFDisplayLinkViewController(),],
+                      ["CADisplayLink": SFDisplayLinkViewController(),
+                       "GCD Timer": SFGCDTimerViewController(),
+                       "Timer": SFTimerViewController(),],
         ]
         
         super.viewDidLoad()
