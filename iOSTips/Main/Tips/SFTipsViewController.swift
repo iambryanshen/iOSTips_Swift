@@ -27,7 +27,9 @@ class SFTipsViewController: SFBaseViewController {
                       
                       ["类似UITabBarController的父子控制器": SFFatherChildVCViewController(),],
                       
-                      ["录音": SFAudioRecorderViewController(),],
+                      ["1. 录音": SFAudioRecorderViewController(),
+                       "2. 播放音效": SFPlayAudioViewController(),
+                       "3. 播放音乐": SFPlayMusicViewController(),],
         
         ]
         

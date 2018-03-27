@@ -64,6 +64,28 @@
 		D3337F60205151B700B6EF74 /* SFBaseGraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3337F5E205151B700B6EF74 /* SFBaseGraphicsViewController.xib */; };
 		D3363C33204CDBA3000C92F2 /* SFOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */; };
 		D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */; };
+		D34344572069EC1900C366C7 /* SFPlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34344552069EC1900C366C7 /* SFPlayAudioViewController.swift */; };
+		D34344582069EC1900C366C7 /* SFPlayAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34344562069EC1900C366C7 /* SFPlayAudioViewController.xib */; };
+		D343445A2069ED2E00C366C7 /* SFAudioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34344592069ED2E00C366C7 /* SFAudioTool.swift */; };
+		D343446B2069EE1700C366C7 /* m_16.wav in Resources */ = {isa = PBXBuildFile; fileRef = D343445C2069EE1700C366C7 /* m_16.wav */; };
+		D343446C2069EE1700C366C7 /* m_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = D343445D2069EE1700C366C7 /* m_03.wav */; };
+		D343446D2069EE1700C366C7 /* m_17.wav in Resources */ = {isa = PBXBuildFile; fileRef = D343445E2069EE1700C366C7 /* m_17.wav */; };
+		D343446E2069EE1700C366C7 /* m_15.wav in Resources */ = {isa = PBXBuildFile; fileRef = D343445F2069EE1700C366C7 /* m_15.wav */; };
+		D343446F2069EE1700C366C7 /* m_14.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344602069EE1700C366C7 /* m_14.wav */; };
+		D34344702069EE1700C366C7 /* m_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344612069EE1700C366C7 /* m_04.wav */; };
+		D34344712069EE1700C366C7 /* m_10.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344622069EE1700C366C7 /* m_10.wav */; };
+		D34344722069EE1700C366C7 /* m_11.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344632069EE1700C366C7 /* m_11.wav */; };
+		D34344732069EE1700C366C7 /* m_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344642069EE1700C366C7 /* m_05.wav */; };
+		D34344742069EE1700C366C7 /* m_13.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344652069EE1700C366C7 /* m_13.wav */; };
+		D34344752069EE1700C366C7 /* m_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344662069EE1700C366C7 /* m_07.wav */; };
+		D34344762069EE1700C366C7 /* m_06.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344672069EE1700C366C7 /* m_06.wav */; };
+		D34344772069EE1700C366C7 /* m_12.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344682069EE1700C366C7 /* m_12.wav */; };
+		D34344782069EE1700C366C7 /* m_08.wav in Resources */ = {isa = PBXBuildFile; fileRef = D34344692069EE1700C366C7 /* m_08.wav */; };
+		D34344792069EE1700C366C7 /* m_09.wav in Resources */ = {isa = PBXBuildFile; fileRef = D343446A2069EE1700C366C7 /* m_09.wav */; };
+		D343447E2069F2EC00C366C7 /* SFPlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D343447C2069F2EC00C366C7 /* SFPlayMusicViewController.swift */; };
+		D343447F2069F2EC00C366C7 /* SFPlayMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D343447D2069F2EC00C366C7 /* SFPlayMusicViewController.xib */; };
+		D34344832069F63100C366C7 /* Lullaby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D34344822069F63100C366C7 /* Lullaby.mp3 */; };
+		D34344852069F71A00C366C7 /* SFMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34344842069F71A00C366C7 /* SFMusicTool.swift */; };
 		D3435A5C2058AE1600DCF371 /* SFScreenShotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3435A5A2058AE1600DCF371 /* SFScreenShotViewController.swift */; };
 		D3435A5D2058AE1600DCF371 /* SFScreenShotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3435A5B2058AE1600DCF371 /* SFScreenShotViewController.xib */; };
 		D344489320196FE7001455AC /* SFUIStackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344489120196FE7001455AC /* SFUIStackViewViewController.swift */; };
@@ -333,6 +355,28 @@
 		D3337F5E205151B700B6EF74 /* SFBaseGraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFBaseGraphicsViewController.xib; sourceTree = "<group>"; };
 		D3363C31204CDBA3000C92F2 /* SFOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFOperationViewController.swift; sourceTree = "<group>"; };
 		D3363C32204CDBA3000C92F2 /* SFOperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFOperationViewController.xib; sourceTree = "<group>"; };
+		D34344552069EC1900C366C7 /* SFPlayAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPlayAudioViewController.swift; sourceTree = "<group>"; };
+		D34344562069EC1900C366C7 /* SFPlayAudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPlayAudioViewController.xib; sourceTree = "<group>"; };
+		D34344592069ED2E00C366C7 /* SFAudioTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAudioTool.swift; sourceTree = "<group>"; };
+		D343445C2069EE1700C366C7 /* m_16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_16.wav; sourceTree = "<group>"; };
+		D343445D2069EE1700C366C7 /* m_03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_03.wav; sourceTree = "<group>"; };
+		D343445E2069EE1700C366C7 /* m_17.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_17.wav; sourceTree = "<group>"; };
+		D343445F2069EE1700C366C7 /* m_15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_15.wav; sourceTree = "<group>"; };
+		D34344602069EE1700C366C7 /* m_14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_14.wav; sourceTree = "<group>"; };
+		D34344612069EE1700C366C7 /* m_04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_04.wav; sourceTree = "<group>"; };
+		D34344622069EE1700C366C7 /* m_10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_10.wav; sourceTree = "<group>"; };
+		D34344632069EE1700C366C7 /* m_11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_11.wav; sourceTree = "<group>"; };
+		D34344642069EE1700C366C7 /* m_05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_05.wav; sourceTree = "<group>"; };
+		D34344652069EE1700C366C7 /* m_13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_13.wav; sourceTree = "<group>"; };
+		D34344662069EE1700C366C7 /* m_07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_07.wav; sourceTree = "<group>"; };
+		D34344672069EE1700C366C7 /* m_06.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_06.wav; sourceTree = "<group>"; };
+		D34344682069EE1700C366C7 /* m_12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_12.wav; sourceTree = "<group>"; };
+		D34344692069EE1700C366C7 /* m_08.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_08.wav; sourceTree = "<group>"; };
+		D343446A2069EE1700C366C7 /* m_09.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_09.wav; sourceTree = "<group>"; };
+		D343447C2069F2EC00C366C7 /* SFPlayMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPlayMusicViewController.swift; sourceTree = "<group>"; };
+		D343447D2069F2EC00C366C7 /* SFPlayMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPlayMusicViewController.xib; sourceTree = "<group>"; };
+		D34344822069F63100C366C7 /* Lullaby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lullaby.mp3; sourceTree = "<group>"; };
+		D34344842069F71A00C366C7 /* SFMusicTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMusicTool.swift; sourceTree = "<group>"; };
 		D3435A5A2058AE1600DCF371 /* SFScreenShotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFScreenShotViewController.swift; sourceTree = "<group>"; };
 		D3435A5B2058AE1600DCF371 /* SFScreenShotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFScreenShotViewController.xib; sourceTree = "<group>"; };
 		D344489120196FE7001455AC /* SFUIStackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUIStackViewViewController.swift; sourceTree = "<group>"; };
@@ -924,6 +968,58 @@
 				D3DD9728204E300E0065E9B6 /* SFCustomOperation.swift */,
 			);
 			path = Operation;
+			sourceTree = "<group>";
+		};
+		D34344542069EC0900C366C7 /* PlayAudio */ = {
+			isa = PBXGroup;
+			children = (
+				D343445B2069EE1700C366C7 /* Resource */,
+				D34344552069EC1900C366C7 /* SFPlayAudioViewController.swift */,
+				D34344562069EC1900C366C7 /* SFPlayAudioViewController.xib */,
+				D34344592069ED2E00C366C7 /* SFAudioTool.swift */,
+			);
+			path = PlayAudio;
+			sourceTree = "<group>";
+		};
+		D343445B2069EE1700C366C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D343445C2069EE1700C366C7 /* m_16.wav */,
+				D343445D2069EE1700C366C7 /* m_03.wav */,
+				D343445E2069EE1700C366C7 /* m_17.wav */,
+				D343445F2069EE1700C366C7 /* m_15.wav */,
+				D34344602069EE1700C366C7 /* m_14.wav */,
+				D34344612069EE1700C366C7 /* m_04.wav */,
+				D34344622069EE1700C366C7 /* m_10.wav */,
+				D34344632069EE1700C366C7 /* m_11.wav */,
+				D34344642069EE1700C366C7 /* m_05.wav */,
+				D34344652069EE1700C366C7 /* m_13.wav */,
+				D34344662069EE1700C366C7 /* m_07.wav */,
+				D34344672069EE1700C366C7 /* m_06.wav */,
+				D34344682069EE1700C366C7 /* m_12.wav */,
+				D34344692069EE1700C366C7 /* m_08.wav */,
+				D343446A2069EE1700C366C7 /* m_09.wav */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D343447A2069F2DF00C366C7 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D343447B2069F2DF00C366C7 /* Resource */,
+				D343447C2069F2EC00C366C7 /* SFPlayMusicViewController.swift */,
+				D343447D2069F2EC00C366C7 /* SFPlayMusicViewController.xib */,
+				D34344842069F71A00C366C7 /* SFMusicTool.swift */,
+			);
+			path = PlayMusic;
+			sourceTree = "<group>";
+		};
+		D343447B2069F2DF00C366C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D34344822069F63100C366C7 /* Lullaby.mp3 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D3435A592058AE0600DCF371 /* ScreenShot */ = {
@@ -2109,6 +2205,8 @@
 		D3DC544E2068A354007BE1D1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				D343447A2069F2DF00C366C7 /* PlayMusic */,
+				D34344542069EC0900C366C7 /* PlayAudio */,
 				D3DC544F2068A354007BE1D1 /* AudioRecorder */,
 			);
 			path = Audio;
@@ -2412,6 +2510,7 @@
 				D3630E36205F630C0045382C /* SFViewAnimAndCoreAnimDifferentViewController.xib in Resources */,
 				D31B084A205B9A8600D4EB1A /* SFImplicitAnimationViewController.xib in Resources */,
 				D39166CC20561691004558CF /* SFDisplayLinkViewController.xib in Resources */,
+				D343446D2069EE1700C366C7 /* m_17.wav in Resources */,
 				D37DC181205100EF00C05481 /* 2.JPG in Resources */,
 				D39665AE20295163001355AE /* SFFileHandleViewController.xib in Resources */,
 				D3337F60205151B700B6EF74 /* SFBaseGraphicsViewController.xib in Resources */,
@@ -2430,6 +2529,7 @@
 				D39706D21FF3795100946BB9 /* flags.plist in Resources */,
 				D39166B620560297004558CF /* SFPieChartViewController.xib in Resources */,
 				D37DC182205100EF00C05481 /* 1.JPG in Resources */,
+				D343446F2069EE1700C366C7 /* m_14.wav in Resources */,
 				D31587852044F7D800C8B66E /* SFApplyGroupViewController.xib in Resources */,
 				D31B0843205B693C00D4EB1A /* SFCATransform3DViewController.xib in Resources */,
 				D326B4C42060A70000D8EAEE /* SFMusicShakeViewController.xib in Resources */,
@@ -2443,12 +2543,15 @@
 				D39665B120295163001355AE /* SFOutputStreamViewController.xib in Resources */,
 				D3630E30205F5FAF0045382C /* SFCAAnimationGroupViewController.xib in Resources */,
 				D39706E31FF3795100946BB9 /* liuxinjia.JPG in Resources */,
+				D34344762069EE1700C366C7 /* m_06.wav in Resources */,
 				D3616A6420413A3F009AE65F /* SFPthreadViewController.xib in Resources */,
 				D3F7CC752027331A00C71BDD /* SFJSONSerializationViewController.xib in Resources */,
+				D34344582069EC1900C366C7 /* SFPlayAudioViewController.xib in Resources */,
 				D39665B82029B0E0001355AE /* SFAlertViewController.xib in Resources */,
 				D39706C31FF3795100946BB9 /* provinces.plist in Resources */,
 				D393207F2057EEC3005C9E02 /* SFRoundImageViewController.xib in Resources */,
 				D35BCE292024403A00047639 /* ProtocolButton.xib in Resources */,
+				D34344722069EE1700C366C7 /* m_11.wav in Resources */,
 				D308FE17202855D800B2B887 /* SFSystemPhotoViewController.xib in Resources */,
 				D32B97D71FF4CBDD00478265 /* SFNetworkStateViewController.xib in Resources */,
 				D39CA8C6205BE18500D00A94 /* SFCABasicAnimationViewController.xib in Resources */,
@@ -2456,10 +2559,12 @@
 				D3B77A0620232CFB00A3D11B /* SFKeyedArchiverView.xib in Resources */,
 				D3F7CC702027320000C71BDD /* SFJSONViewController.xib in Resources */,
 				D3630E25205F50260045382C /* SFCAKeyAnimationViewController.xib in Resources */,
+				D34344772069EE1700C366C7 /* m_12.wav in Resources */,
 				D3B77A0B20232EF200A3D11B /* SFNSCacheViewController.xib in Resources */,
 				D35BCE1F2024403A00047639 /* NibCollectionViewCell.xib in Resources */,
 				D35BCE282024403A00047639 /* ProtocolView.xib in Resources */,
 				D3683058202C79EE00674E4F /* icon.JPG in Resources */,
+				D343446C2069EE1700C366C7 /* m_03.wav in Resources */,
 				D3DC54572068A37B007BE1D1 /* SFAudioRecorderViewController.xib in Resources */,
 				D39706CB1FF3795100946BB9 /* agt.gif in Resources */,
 				D324863C1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib in Resources */,
@@ -2468,6 +2573,8 @@
 				D39706CD1FF3795100946BB9 /* xiby.gif in Resources */,
 				D39706C71FF3795100946BB9 /* wlgui.gif in Resources */,
 				D3F7CC922027450E00C71BDD /* SFJSONExampleCell.xib in Resources */,
+				D343446B2069EE1700C366C7 /* m_16.wav in Resources */,
+				D343446E2069EE1700C366C7 /* m_15.wav in Resources */,
 				D3E5BD5720342D63003DA140 /* SFAppJumpViewController.xib in Resources */,
 				D318C4F52052789600D507BB /* SFDrawProgressViewController.xib in Resources */,
 				D356DB0F202D98FB00514C1B /* SFAFGetPostViewController.xib in Resources */,
@@ -2478,18 +2585,27 @@
 				D36D7E6B20439B22006A9628 /* NavigationTitleView.xib in Resources */,
 				D36D7E812043EA76006A9628 /* SFFunctionQueueViewController.xib in Resources */,
 				D3B779F720230B4C00A3D11B /* SFUserDefaultsViewController.xib in Resources */,
+				D34344702069EE1700C366C7 /* m_04.wav in Resources */,
+				D343447F2069F2EC00C366C7 /* SFPlayMusicViewController.xib in Resources */,
+				D34344782069EE1700C366C7 /* m_08.wav in Resources */,
 				D39706B81FF3795100946BB9 /* SFUILabelViewController.xib in Resources */,
 				D39706C61FF3795100946BB9 /* helan.gif in Resources */,
+				D34344832069F63100C366C7 /* Lullaby.mp3 in Resources */,
 				D30904652029DCB10004B554 /* SFClosureViewController.xib in Resources */,
+				D34344752069EE1700C366C7 /* m_07.wav in Resources */,
 				D39706C51FF3795100946BB9 /* putaoya.gif in Resources */,
 				D39706E11FF3795100946BB9 /* ImageTableViewCell.xib in Resources */,
+				D34344742069EE1700C366C7 /* m_13.wav in Resources */,
 				D3630E2B205F5B2A0045382C /* SFCATransitionViewController.xib in Resources */,
 				D3363C34204CDBA3000C92F2 /* SFOperationViewController.xib in Resources */,
 				D32DAEE520401BA500BFA18E /* SFResponseViewController.xib in Resources */,
+				D34344792069EE1700C366C7 /* m_09.wav in Resources */,
+				D34344712069EE1700C366C7 /* m_10.wav in Resources */,
 				D39706CC1FF3795100946BB9 /* faguo.gif in Resources */,
 				D3683049202C6C7800674E4F /* SFUploadSthViewController.xib in Resources */,
 				D39706C91FF3795100946BB9 /* ruishi.gif in Resources */,
 				D3F55F851FE4FCE300EC214F /* Assets.xcassets in Resources */,
+				D34344732069EE1700C366C7 /* m_05.wav in Resources */,
 				D318DD762061F20200FA5DC4 /* SFTransformViewController.xib in Resources */,
 				D35BCE1A2024403A00047639 /* SFShakeAnimationViewController.xib in Resources */,
 			);
@@ -2550,6 +2666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D343447E2069F2EC00C366C7 /* SFPlayMusicViewController.swift in Sources */,
 				D30904672029DCC00004B554 /* SFDownloadTaskViewController.swift in Sources */,
 				D3B779FD2023283400A3D11B /* Person.swift in Sources */,
 				D39706BF1FF3795100946BB9 /* TextFieldProtocol.swift in Sources */,
@@ -2575,6 +2692,7 @@
 				D39706C11FF3795100946BB9 /* SFLoginRegisterViewController.swift in Sources */,
 				D39706EF1FF388E300946BB9 /* SFNetworkNavigationController.swift in Sources */,
 				D344489320196FE7001455AC /* SFUIStackViewViewController.swift in Sources */,
+				D34344852069F71A00C366C7 /* SFMusicTool.swift in Sources */,
 				D39166BD20560F68004558CF /* SFDrawTextViewController.swift in Sources */,
 				D35BCE1C2024403A00047639 /* RegisterCellProtocol.swift in Sources */,
 				D3B779EE2023070600A3D11B /* SFNSObjectNavigationController.swift in Sources */,
@@ -2594,6 +2712,7 @@
 				D3113EED1FEC9160003EB527 /* SFFrameworkViewController.swift in Sources */,
 				D368304B202C6CC800674E4F /* SFUploadTaskViewController.swift in Sources */,
 				D3A4AA3A1FFC61FE00BB4598 /* SFDragViewController.swift in Sources */,
+				D34344572069EC1900C366C7 /* SFPlayAudioViewController.swift in Sources */,
 				D36D7E802043EA76006A9628 /* SFFunctionQueueViewController.swift in Sources */,
 				D39706F01FF388E300946BB9 /* SFNetworkViewController.swift in Sources */,
 				D392883E1FFCB1B700086377 /* SFDragCollectionViewController.swift in Sources */,
@@ -2602,6 +2721,7 @@
 				D31B0847205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift in Sources */,
 				D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */,
 				D3B9461920438B7400DFBAC9 /* SFFatherChildVCViewController.swift in Sources */,
+				D343445A2069ED2E00C366C7 /* SFAudioTool.swift in Sources */,
 				D3FDAEC22030358B00C35433 /* SFDownloadViewController.swift in Sources */,
 				D361E5D32068EAEA007BE36E /* SFTimerViewController.swift in Sources */,
 				D3F7CC742027331A00C71BDD /* SFJSONSerializationViewController.swift in Sources */,
