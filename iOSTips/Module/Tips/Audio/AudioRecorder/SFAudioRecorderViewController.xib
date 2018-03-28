@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFAudioRecorderViewController" customModule="iOSTips" customModuleProvider="target">
             <connections>
+                <outlet property="audioVolume" destination="gmu-oV-3fd" id="JAB-a0-ZkO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,25 +21,38 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-IC-cEK">
-                    <rect key="frame" x="156" y="199" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="开始录音"/>
-                    <connections>
-                        <action selector="startRecording:" destination="-1" eventType="touchUpInside" id="SqT-Pq-G0a"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdX-xr-Kow">
-                    <rect key="frame" x="156" y="386" width="62" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="结束录音"/>
-                    <connections>
-                        <action selector="endRecording:" destination="-1" eventType="touchUpInside" id="MDH-7f-6gO"/>
-                    </connections>
-                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住屏幕开始录音，松手停止录音，如果录音时间不超过2秒，删除录音文件，下方显示录音音量的大小" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-be-8KC">
+                    <rect key="frame" x="50" y="293" width="275" height="81.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-oV-3fd">
+                    <rect key="frame" x="239" y="474.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录音音量的大小：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcK-Dg-lwr">
+                    <rect key="frame" x="50" y="474.5" width="139" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RAN-be-8KC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="ToJ-ns-YpM"/>
+                <constraint firstItem="gmu-oV-3fd" firstAttribute="leading" secondItem="pcK-Dg-lwr" secondAttribute="trailing" constant="50" id="U5l-DF-6vF"/>
+                <constraint firstItem="RAN-be-8KC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ain-LB-Iy7"/>
+                <constraint firstItem="RAN-be-8KC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="co9-Af-I9V"/>
+                <constraint firstItem="pcK-Dg-lwr" firstAttribute="top" secondItem="RAN-be-8KC" secondAttribute="bottom" constant="100" id="fVy-Br-EsA"/>
+                <constraint firstItem="gmu-oV-3fd" firstAttribute="centerY" secondItem="pcK-Dg-lwr" secondAttribute="centerY" id="kDp-Tw-CmT"/>
+                <constraint firstItem="pcK-Dg-lwr" firstAttribute="leading" secondItem="RAN-be-8KC" secondAttribute="leading" id="oCt-8z-Hia"/>
+                <constraint firstAttribute="trailing" secondItem="RAN-be-8KC" secondAttribute="trailing" constant="50" id="v2M-yA-dft"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

@@ -260,6 +260,8 @@
 		D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */; };
 		D3CEABAB203E5CD30054D25E /* SFUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */; };
 		D3CEABAF203E66C10054D25E /* SFPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CEABAE203E66C10054D25E /* SFPrint.swift */; };
+		D3D1B82A206BC59B00028CCD /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D1B828206BC59B00028CCD /* libmp3lame.a */; };
+		D3D1B832206BCD3D00028CCD /* SFLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D1B831206BCD3D00028CCD /* SFLameTool.m */; };
 		D3DC5446206894D1007BE1D1 /* SFRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC5445206894D0007BE1D1 /* SFRuntimeViewController.swift */; };
 		D3DC54562068A37B007BE1D1 /* SFAudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */; };
 		D3DC54572068A37B007BE1D1 /* SFAudioRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */; };
@@ -331,7 +333,6 @@
 		D31C391A1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFUICollectionViewLifeCycleViewController.swift; sourceTree = "<group>"; };
 		D31C391D1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLifeCycleCollectionViewCell.swift; sourceTree = "<group>"; };
 		D31C391E1FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFLifeCycleCollectionViewCell.xib; sourceTree = "<group>"; };
-		D32486331FF46FE3006EAACD /* iOSTips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSTips-Bridging-Header.h"; sourceTree = "<group>"; };
 		D32486341FF46FE4006EAACD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		D32486351FF46FE4006EAACD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D32486371FF485BC006EAACD /* SFNetworkStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFNetworkStateViewController.swift; sourceTree = "<group>"; };
@@ -550,6 +551,11 @@
 		D3CEABA8203E5CD30054D25E /* SFUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUploadViewController.swift; sourceTree = "<group>"; };
 		D3CEABA9203E5CD30054D25E /* SFUploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFUploadViewController.xib; sourceTree = "<group>"; };
 		D3CEABAE203E66C10054D25E /* SFPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrint.swift; sourceTree = "<group>"; };
+		D3D1B828206BC59B00028CCD /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		D3D1B829206BC59B00028CCD /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		D3D1B830206BCD3D00028CCD /* SFLameTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLameTool.h; sourceTree = "<group>"; };
+		D3D1B831206BCD3D00028CCD /* SFLameTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFLameTool.m; sourceTree = "<group>"; };
+		D3D1B834206BCE9900028CCD /* iOSTips-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSTips-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3DC5445206894D0007BE1D1 /* SFRuntimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFRuntimeViewController.swift; sourceTree = "<group>"; };
 		D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAudioRecorderViewController.swift; sourceTree = "<group>"; };
 		D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFAudioRecorderViewController.xib; sourceTree = "<group>"; };
@@ -590,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B61CC116A25E97EB3C1F7C9 /* Pods_iOSTips.framework in Frameworks */,
+				D3D1B82A206BC59B00028CCD /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +856,6 @@
 			children = (
 				D32486341FF46FE4006EAACD /* Reachability.h */,
 				D32486351FF46FE4006EAACD /* Reachability.m */,
-				D32486331FF46FE3006EAACD /* iOSTips-Bridging-Header.h */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -2202,6 +2208,17 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		D3D1B827206BC59B00028CCD /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				D3D1B828206BC59B00028CCD /* libmp3lame.a */,
+				D3D1B829206BC59B00028CCD /* lame.h */,
+				D3D1B830206BCD3D00028CCD /* SFLameTool.h */,
+				D3D1B831206BCD3D00028CCD /* SFLameTool.m */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
 		D3DC544E2068A354007BE1D1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -2215,6 +2232,7 @@
 		D3DC544F2068A354007BE1D1 /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				D3D1B827206BC59B00028CCD /* lame */,
 				D3DC54542068A37B007BE1D1 /* SFAudioRecorderViewController.swift */,
 				D3DC54552068A37B007BE1D1 /* SFAudioRecorderViewController.xib */,
 			);
@@ -2317,6 +2335,7 @@
 				D3683056202C79A900674E4F /* Resource */,
 				D3CEABAD203E66B00054D25E /* Tool */,
 				D3F55F7D1FE4FCE300EC214F /* AppDelegate.swift */,
+				D3D1B834206BCE9900028CCD /* iOSTips-Bridging-Header.h */,
 				D3F55F841FE4FCE300EC214F /* Assets.xcassets */,
 				D3F55F861FE4FCE300EC214F /* LaunchScreen.storyboard */,
 				D3F55F891FE4FCE300EC214F /* Info.plist */,
@@ -2671,6 +2690,7 @@
 				D3B779FD2023283400A3D11B /* Person.swift in Sources */,
 				D39706BF1FF3795100946BB9 /* TextFieldProtocol.swift in Sources */,
 				D362241420440F1D0058222B /* UIDevice-Extension.swift in Sources */,
+				D3D1B832206BCD3D00028CCD /* SFLameTool.m in Sources */,
 				D3CEABAA203E5CD30054D25E /* SFUploadViewController.swift in Sources */,
 				D318C4F72052ADD700D507BB /* SFDrawProgressView.swift in Sources */,
 				D361E5CF2068DD4D007BE36E /* SFGCDTimerViewController.swift in Sources */,
@@ -2968,10 +2988,14 @@
 				INFOPLIST_FILE = iOSTips/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSTips/Module/Tips/Audio/AudioRecorder/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brian.iOSTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSTips/Module/Network/Reachability/Reachability/iOSTips-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTips/iOSTips-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2990,10 +3014,14 @@
 				INFOPLIST_FILE = iOSTips/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSTips/Module/Tips/Audio/AudioRecorder/lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brian.iOSTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "iOSTips/Module/Network/Reachability/Reachability/iOSTips-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTips/iOSTips-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
