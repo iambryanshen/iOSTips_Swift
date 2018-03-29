@@ -17,25 +17,39 @@ class SFAudioTool: NSObject {
     ///
     /// - Parameters:
     ///   - name: 音频文件的名称
+    ///   - isAlert: 是否播放音效时，手动带有震动效果
     ///   - completion: 播放完成后的回调
-    class func playAudioWithName(name: String, completion:(() -> Void)? = nil) {
+    class func playAudioWithName(name: String, isAlert: Bool, completion:(() -> Void)? = nil) {
         
         // 定义SystemSoundID
         var soundID: SystemSoundID = 0
         
         // 获取音频文件路径url
-        let url = Bundle.main.url(forResource: name, withExtension: nil)
+        guard let url = Bundle.main.url(forResource: name, withExtension: nil) else {
+            return
+        }
         
         // 根据文件路径url给SystemSoundID赋值
-        AudioServicesCreateSystemSoundID(url! as CFURL, &soundID)
+        AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
         
-        // 播放音效，没有震动
-        // AudioServicesPlaySystemSound(soundID)
-        // 播放音效，有震动
-        AudioServicesPlayAlertSoundWithCompletion(soundID) {
-            if let completion = completion {
-                completion()
+        if isAlert {
+            // 播放音效，有震动
+            AudioServicesPlayAlertSoundWithCompletion(soundID) {
+                // 当播放完成时，根据SystemSoundID释放内存资源
+                AudioServicesDisposeSystemSoundID(soundID)
+                if let completion = completion {
+                    completion()
+                }
             }
+        } else {
+            // 播放音效，没有震动
+            AudioServicesPlaySystemSoundWithCompletion(soundID, {
+                // 当播放完成时，根据SystemSoundID释放内存资源
+                AudioServicesDisposeSystemSoundID(soundID)
+                if let completion = completion {
+                    completion()
+                }
+            })
         }
     }
 }

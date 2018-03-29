@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="idE-r4-UMO">
-                    <rect key="frame" x="162.5" y="228.5" width="50" height="210"/>
+                    <rect key="frame" x="122.5" y="138.5" width="130" height="390"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZr-fo-VGU">
-                            <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                             <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Start">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,11 +34,8 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-zu-6EN">
-                            <rect key="frame" x="0.0" y="60" width="50" height="30"/>
+                            <rect key="frame" x="0.0" y="60" width="130" height="30"/>
                             <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="50" id="8hx-U4-wOM"/>
-                            </constraints>
                             <state key="normal" title="Pause">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
@@ -47,7 +44,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpT-ay-oav">
-                            <rect key="frame" x="0.0" y="120" width="50" height="30"/>
+                            <rect key="frame" x="0.0" y="120" width="130" height="30"/>
                             <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="End">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,17 +54,48 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX3-af-EbJ">
-                            <rect key="frame" x="0.0" y="180" width="50" height="30"/>
+                            <rect key="frame" x="0.0" y="180" width="130" height="30"/>
                             <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="快进">
+                            <state key="normal" title="快进到指定时间">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
-                                <action selector="fastForward:" destination="-1" eventType="touchUpInside" id="wLF-Xc-oRP"/>
+                                <action selector="fastForwardSpecificTime:" destination="-1" eventType="touchUpInside" id="BV8-wp-KOd"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgl-13-wAe">
+                            <rect key="frame" x="0.0" y="240" width="130" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="快进几秒">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="fastForwardSpecificSecond:" destination="-1" eventType="touchUpInside" id="D6N-a1-KKk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUP-6v-uxc">
+                            <rect key="frame" x="0.0" y="300" width="130" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="倍速播放">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="severalRate:" destination="-1" eventType="touchUpInside" id="2OJ-lQ-ivY"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pGx-Af-3ns">
+                            <rect key="frame" x="-2" y="360" width="134" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="4w2-qm-wEd"/>
+                            </constraints>
+                            <connections>
+                                <action selector="volumeChange:" destination="-1" eventType="valueChanged" id="0RT-Hw-edf"/>
+                            </connections>
+                        </slider>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="cUP-6v-uxc" firstAttribute="centerX" secondItem="idE-r4-UMO" secondAttribute="centerX" id="5hI-XV-911"/>
+                        <constraint firstItem="Bgl-13-wAe" firstAttribute="centerX" secondItem="idE-r4-UMO" secondAttribute="centerX" id="NYm-db-Lp4"/>
                         <constraint firstItem="wpT-ay-oav" firstAttribute="centerX" secondItem="idE-r4-UMO" secondAttribute="centerX" id="WZc-g7-nse"/>
                         <constraint firstItem="LX3-af-EbJ" firstAttribute="centerX" secondItem="idE-r4-UMO" secondAttribute="centerX" id="gGE-FA-BVI"/>
                         <constraint firstItem="NZr-fo-VGU" firstAttribute="centerX" secondItem="idE-r4-UMO" secondAttribute="centerX" id="i04-17-uXx"/>

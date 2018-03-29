@@ -11,6 +11,13 @@
 
 @implementation SFLameTool
 
+/**
+ 把wav、caf文件转成Mp3文件
+ 
+ @param sourcePath wav/caf文件所在路径
+ @param isDelete 转化完成后是否删除wav、caf文件
+ @return 转化后的Mp3文件保存的路径
+ */
 + (NSString *)audioToMP3: (NSString *)sourcePath isDeleteSourchFile:(BOOL)isDelete
 {
     

@@ -11,6 +11,8 @@ import UIKit
 class SFPlayAudioViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        SFAudioTool.playAudioWithName(name: "m_16.wav")
+        SFAudioTool.playAudioWithName(name: "m_16.wav", isAlert: true) {
+            print("音效播放完成!")
+        }
     }
 }
