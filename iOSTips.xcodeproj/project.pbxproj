@@ -172,6 +172,8 @@
 		D393207E2057EEC3005C9E02 /* SFRoundImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D393207C2057EEC3005C9E02 /* SFRoundImageViewController.swift */; };
 		D393207F2057EEC3005C9E02 /* SFRoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D393207D2057EEC3005C9E02 /* SFRoundImageViewController.xib */; };
 		D394497C2005B1B800405C1F /* SFActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394497B2005B1B800405C1F /* SFActivityIndicatorViewController.swift */; };
+		D395CEFF2083181500A6D06C /* SFPlayRemoteMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395CEFD2083181500A6D06C /* SFPlayRemoteMusicViewController.swift */; };
+		D395CF002083181500A6D06C /* SFPlayRemoteMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */; };
 		D39665A3202950A3001355AE /* SFDataTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39665A2202950A3001355AE /* SFDataTaskViewController.swift */; };
 		D39665A6202950FA001355AE /* SFGetPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39665A4202950F9001355AE /* SFGetPostViewController.xib */; };
 		D39665A7202950FA001355AE /* SFGetPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39665A5202950FA001355AE /* SFGetPostViewController.swift */; };
@@ -463,6 +465,8 @@
 		D393207C2057EEC3005C9E02 /* SFRoundImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFRoundImageViewController.swift; sourceTree = "<group>"; };
 		D393207D2057EEC3005C9E02 /* SFRoundImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFRoundImageViewController.xib; sourceTree = "<group>"; };
 		D394497B2005B1B800405C1F /* SFActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		D395CEFD2083181500A6D06C /* SFPlayRemoteMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPlayRemoteMusicViewController.swift; sourceTree = "<group>"; };
+		D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPlayRemoteMusicViewController.xib; sourceTree = "<group>"; };
 		D39665A2202950A3001355AE /* SFDataTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDataTaskViewController.swift; sourceTree = "<group>"; };
 		D39665A4202950F9001355AE /* SFGetPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFGetPostViewController.xib; sourceTree = "<group>"; };
 		D39665A5202950FA001355AE /* SFGetPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGetPostViewController.swift; sourceTree = "<group>"; };
@@ -1634,6 +1638,15 @@
 			path = "ActivityIndicator（原生转菊花）";
 			sourceTree = "<group>";
 		};
+		D395CEFC2083180400A6D06C /* PlayRemoteMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D395CEFD2083181500A6D06C /* SFPlayRemoteMusicViewController.swift */,
+				D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */,
+			);
+			path = PlayRemoteMusic;
+			sourceTree = "<group>";
+		};
 		D396659C20295056001355AE /* Get&POST */ = {
 			isa = PBXGroup;
 			children = (
@@ -2222,6 +2235,7 @@
 		D3DC544E2068A354007BE1D1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				D395CEFC2083180400A6D06C /* PlayRemoteMusic */,
 				D343447A2069F2DF00C366C7 /* PlayMusic */,
 				D34344542069EC0900C366C7 /* PlayAudio */,
 				D3DC544F2068A354007BE1D1 /* AudioRecorder */,
@@ -2478,7 +2492,7 @@
 			attributes = {
 				CLASSPREFIX = SF;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = brian;
 				TargetAttributes = {
 					D3F55F791FE4FCE300EC214F = {
@@ -2547,6 +2561,7 @@
 				D344489420196FE7001455AC /* SFUIStackViewViewController.xib in Resources */,
 				D31B083E205B5D1200D4EB1A /* SFCALayerViewController.xib in Resources */,
 				D3B77A0120232A4100A3D11B /* SFNSKeyedArchiverViewController.xib in Resources */,
+				D395CF002083181500A6D06C /* SFPlayRemoteMusicViewController.xib in Resources */,
 				D39706C81FF3795100946BB9 /* hanguo.gif in Resources */,
 				D31B084F205BA73000D4EB1A /* SFCALayerClockViewController.xib in Resources */,
 				D326B4BE2060984E00D8EAEE /* SFImageFoldViewController.xib in Resources */,
@@ -2797,6 +2812,7 @@
 				D30904642029DCB10004B554 /* SFClosureViewController.swift in Sources */,
 				D39706E01FF3795100946BB9 /* ImageTableViewCell.swift in Sources */,
 				D39706DD1FF3795100946BB9 /* SFTableViewController.swift in Sources */,
+				D395CEFF2083181500A6D06C /* SFPlayRemoteMusicViewController.swift in Sources */,
 				D39706BE1FF3795100946BB9 /* CityTextField.swift in Sources */,
 				D35BCDF82024363200047639 /* SFRefreshControlViewController.swift in Sources */,
 				D3616A5A20410AB3009AE65F /* SFModalViewController.swift in Sources */,
@@ -2888,6 +2904,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2895,6 +2912,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2945,6 +2963,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -2952,6 +2971,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2991,7 +3011,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZZS76SEL5;
 				INFOPLIST_FILE = iOSTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3017,7 +3037,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZZS76SEL5;
 				INFOPLIST_FILE = iOSTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -21,11 +21,15 @@ class SFCATransform3DViewController: UIViewController {
     }
     
     @IBAction func translation(_ sender: UIButton) {
+        
+        print(self.imageView.frame)
         UIView.animate(withDuration: 0.5) {
 //            self.imageView.layer.transform = CATransform3DMakeTranslation(100, 100, 100)
             self.imageView.layer.transform = CATransform3DTranslate(self.imageView.layer.transform, 100, 100, 100)
+            self.imageView.layer.transform = CATransform3DScale(self.imageView.layer.transform, 2, 2, 2)
 //            self.imageView.layer.setValue(100, forKeyPath: "transform.translation.x")
         }
+        print(self.imageView.frame)
     }
     
     @IBAction func scale(_ sender: UIButton) {

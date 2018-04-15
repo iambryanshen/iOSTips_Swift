@@ -29,7 +29,8 @@ class SFTipsViewController: SFBaseViewController {
                       
                       ["1. 录音": SFAudioRecorderViewController(),
                        "2. 播放音效": SFPlayAudioViewController(),
-                       "3. 播放音乐": SFPlayMusicViewController(),],
+                       "3. 播放音乐": SFPlayMusicViewController(),
+                       "4. 播放远程音乐": SFPlayRemoteMusicViewController(),],
         
         ]
         
