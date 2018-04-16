@@ -151,6 +151,8 @@
 		D36D7E7B2043E9DF006A9628 /* SFGCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D7E792043E9DF006A9628 /* SFGCDViewController.swift */; };
 		D36D7E802043EA76006A9628 /* SFFunctionQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36D7E7E2043EA76006A9628 /* SFFunctionQueueViewController.swift */; };
 		D36D7E812043EA76006A9628 /* SFFunctionQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36D7E7F2043EA76006A9628 /* SFFunctionQueueViewController.xib */; };
+		D3776789208452B80003F5FD /* SFAVPlayerVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3776788208452B80003F5FD /* SFAVPlayerVCViewController.swift */; };
+		D377678B208454720003F5FD /* SFAVPlayerVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D377678A208454720003F5FD /* SFAVPlayerVCViewController.xib */; };
 		D37DC181205100EF00C05481 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D37DC17F205100EF00C05481 /* 2.JPG */; };
 		D37DC182205100EF00C05481 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D37DC180205100EF00C05481 /* 1.JPG */; };
 		D387BA651FE593DD00048D0F /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387BA641FE593DD00048D0F /* UIColor-Extension.swift */; };
@@ -174,6 +176,8 @@
 		D394497C2005B1B800405C1F /* SFActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D394497B2005B1B800405C1F /* SFActivityIndicatorViewController.swift */; };
 		D395CEFF2083181500A6D06C /* SFPlayRemoteMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395CEFD2083181500A6D06C /* SFPlayRemoteMusicViewController.swift */; };
 		D395CF002083181500A6D06C /* SFPlayRemoteMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */; };
+		D395CF052083623900A6D06C /* SFAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D395CF032083623900A6D06C /* SFAVPlayerViewController.swift */; };
+		D395CF062083623900A6D06C /* SFAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D395CF042083623900A6D06C /* SFAVPlayerViewController.xib */; };
 		D39665A3202950A3001355AE /* SFDataTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39665A2202950A3001355AE /* SFDataTaskViewController.swift */; };
 		D39665A6202950FA001355AE /* SFGetPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39665A4202950F9001355AE /* SFGetPostViewController.xib */; };
 		D39665A7202950FA001355AE /* SFGetPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39665A5202950FA001355AE /* SFGetPostViewController.swift */; };
@@ -444,6 +448,8 @@
 		D36D7E792043E9DF006A9628 /* SFGCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGCDViewController.swift; sourceTree = "<group>"; };
 		D36D7E7E2043EA76006A9628 /* SFFunctionQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFFunctionQueueViewController.swift; sourceTree = "<group>"; };
 		D36D7E7F2043EA76006A9628 /* SFFunctionQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFFunctionQueueViewController.xib; sourceTree = "<group>"; };
+		D3776788208452B80003F5FD /* SFAVPlayerVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAVPlayerVCViewController.swift; sourceTree = "<group>"; };
+		D377678A208454720003F5FD /* SFAVPlayerVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFAVPlayerVCViewController.xib; sourceTree = "<group>"; };
 		D37DC17F205100EF00C05481 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
 		D37DC180205100EF00C05481 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
 		D387BA641FE593DD00048D0F /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
@@ -467,6 +473,8 @@
 		D394497B2005B1B800405C1F /* SFActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		D395CEFD2083181500A6D06C /* SFPlayRemoteMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPlayRemoteMusicViewController.swift; sourceTree = "<group>"; };
 		D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFPlayRemoteMusicViewController.xib; sourceTree = "<group>"; };
+		D395CF032083623900A6D06C /* SFAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAVPlayerViewController.swift; sourceTree = "<group>"; };
+		D395CF042083623900A6D06C /* SFAVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFAVPlayerViewController.xib; sourceTree = "<group>"; };
 		D39665A2202950A3001355AE /* SFDataTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDataTaskViewController.swift; sourceTree = "<group>"; };
 		D39665A4202950F9001355AE /* SFGetPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFGetPostViewController.xib; sourceTree = "<group>"; };
 		D39665A5202950FA001355AE /* SFGetPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFGetPostViewController.swift; sourceTree = "<group>"; };
@@ -1463,6 +1471,15 @@
 			path = FunctionQueue;
 			sourceTree = "<group>";
 		};
+		D37767872084529E0003F5FD /* AVPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3776788208452B80003F5FD /* SFAVPlayerVCViewController.swift */,
+				D377678A208454720003F5FD /* SFAVPlayerVCViewController.xib */,
+			);
+			path = AVPlayerViewController;
+			sourceTree = "<group>";
+		};
 		D37DC17E205100EF00C05481 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1645,6 +1662,24 @@
 				D395CEFE2083181500A6D06C /* SFPlayRemoteMusicViewController.xib */,
 			);
 			path = PlayRemoteMusic;
+			sourceTree = "<group>";
+		};
+		D395CF012083622400A6D06C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D37767872084529E0003F5FD /* AVPlayerViewController */,
+				D395CF022083622400A6D06C /* AVPlayer */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D395CF022083622400A6D06C /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D395CF032083623900A6D06C /* SFAVPlayerViewController.swift */,
+				D395CF042083623900A6D06C /* SFAVPlayerViewController.xib */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 		D396659C20295056001355AE /* Get&POST */ = {
@@ -2440,6 +2475,7 @@
 		D3FC685F20030A74003B924C /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				D395CF012083622400A6D06C /* Video */,
 				D3DC544E2068A354007BE1D1 /* Audio */,
 				D362240E204408710058222B /* DeviceInfo */,
 				D3B9461620438B5500DFBAC9 /* FatherChildVC */,
@@ -2575,6 +2611,7 @@
 				D3F55F881FE4FCE300EC214F /* LaunchScreen.storyboard in Resources */,
 				D39706D01FF3795100946BB9 /* ying.gif in Resources */,
 				D3E5BD5C20343073003DA140 /* SFSystemSettingViewController.xib in Resources */,
+				D395CF062083623900A6D06C /* SFAVPlayerViewController.xib in Resources */,
 				D31C39201FFDB2E700D38AA9 /* SFLifeCycleCollectionViewCell.xib in Resources */,
 				D39706D11FF3795100946BB9 /* zhongguo.jpg in Resources */,
 				D3B779F2202307F300A3D11B /* SFPlistViewController.xib in Resources */,
@@ -2609,6 +2646,7 @@
 				D324863C1FF4860C006EAACD /* SFNetworkStateTableViewCell.xib in Resources */,
 				D361E5D42068EAEA007BE36E /* SFTimerViewController.xib in Resources */,
 				D39706D61FF3795100946BB9 /* FlagView.xib in Resources */,
+				D377678B208454720003F5FD /* SFAVPlayerVCViewController.xib in Resources */,
 				D39706CD1FF3795100946BB9 /* xiby.gif in Resources */,
 				D39706C71FF3795100946BB9 /* wlgui.gif in Resources */,
 				D3F7CC922027450E00C71BDD /* SFJSONExampleCell.xib in Resources */,
@@ -2757,6 +2795,7 @@
 				D39706F01FF388E300946BB9 /* SFNetworkViewController.swift in Sources */,
 				D392883E1FFCB1B700086377 /* SFDragCollectionViewController.swift in Sources */,
 				D31C391C1FFDB2CE00D38AA9 /* SFUICollectionViewLifeCycleViewController.swift in Sources */,
+				D395CF052083623900A6D06C /* SFAVPlayerViewController.swift in Sources */,
 				D32486361FF46FE4006EAACD /* Reachability.m in Sources */,
 				D31B0847205B92AE00D4EB1A /* SFImplicitAnimationViewController.swift in Sources */,
 				D39166B520560297004558CF /* SFPieChartViewController.swift in Sources */,
@@ -2854,6 +2893,7 @@
 				D32486381FF485BC006EAACD /* SFNetworkStateViewController.swift in Sources */,
 				D39706D81FF3795100946BB9 /* SFUIViewController.swift in Sources */,
 				D3683048202C6C7800674E4F /* SFUploadSthViewController.swift in Sources */,
+				D3776789208452B80003F5FD /* SFAVPlayerVCViewController.swift in Sources */,
 				D3616A6820414280009AE65F /* SFThreadViewController.swift in Sources */,
 				D3616A5B20410AB3009AE65F /* SFModalChildViewController.swift in Sources */,
 				D39665B020295163001355AE /* SFOutputStreamViewController.swift in Sources */,
@@ -3011,7 +3051,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZZS76SEL5;
 				INFOPLIST_FILE = iOSTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3037,7 +3077,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZZS76SEL5;
 				INFOPLIST_FILE = iOSTips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

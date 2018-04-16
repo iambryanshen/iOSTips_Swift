@@ -53,6 +53,7 @@ class SFOperationViewController: UIViewController {
             print("1---", Thread.current)
         }
         
+        // 追加操作
         operation3.addExecutionBlock {
             print("2---", Thread.current)
         }

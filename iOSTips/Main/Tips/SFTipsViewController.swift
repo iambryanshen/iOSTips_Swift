@@ -12,7 +12,7 @@ class SFTipsViewController: SFBaseViewController {
 
     override func viewDidLoad() {
 
-        headers = ["面向协议开发", "Runtime", "UIApplication", "访问系统", "父子控制器", "音频"]
+        headers = ["面向协议开发", "Runtime", "UIApplication", "访问系统", "父子控制器", "音频", "视频"]
         dataSource = [["使用协议从xib中加载UIView": SFProtocolViewController(),
                        "使用协议封装登录按钮抖动动画": SFShakeAnimationViewController(),
                        "使用协议注册UITableViewCell": SFRegisterCellViewController(),],
@@ -31,6 +31,9 @@ class SFTipsViewController: SFBaseViewController {
                        "2. 播放音效": SFPlayAudioViewController(),
                        "3. 播放音乐": SFPlayMusicViewController(),
                        "4. 播放远程音乐": SFPlayRemoteMusicViewController(),],
+                      
+                      ["AVPlayer": SFAVPlayerViewController(),
+                       "AVPlayerVC": SFAVPlayerVCViewController(),],
         
         ]
         
