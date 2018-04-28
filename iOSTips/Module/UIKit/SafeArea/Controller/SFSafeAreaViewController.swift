@@ -25,7 +25,7 @@ class SFSafeAreaViewController: UIViewController {
         
         setupSubviews()
         
-        setNavigationBarWithSafeArea()
+//        setNavigationBarWithSafeArea()
     }
     
     override func viewSafeAreaInsetsDidChange() {

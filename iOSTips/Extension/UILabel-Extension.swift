@@ -22,6 +22,11 @@ struct UILabelExtension {
         self.label = label
     }
     
+    /// 设置Label的行间距和字间距
+    ///
+    /// - Parameters:
+    ///   - lineSpace: 行间距
+    ///   - wordSpace: 字间距
     func changeLabelRowSpace(lineSpace: CGFloat, wordSpace: CGFloat) {
         guard let content = label.text else {return}
         let attributedString : NSMutableAttributedString = NSMutableAttributedString(string: content)
@@ -33,6 +38,10 @@ struct UILabelExtension {
         label.sizeToFit()
     }
     
+    
+    /// 指定Label显示的字的个数
+    ///
+    /// - Parameter number: 个数
     func specifiesTheNumberOfWordsToDisplay(number: Int) {
         guard let content = label.text else {return}
         let attributedString : NSMutableAttributedString = NSMutableAttributedString(string: content)

@@ -14,8 +14,8 @@ class SFRoundImageViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-//        roundImageWithBorder()
-        roundImage()
+        roundImageWithBorder()
+//        roundImage()
     }
     
     // 不带边框的圆角图片
