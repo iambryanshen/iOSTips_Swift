@@ -1492,8 +1492,8 @@
 		D3856839200D837E00D3B309 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				D3B779E9202306E700A3D11B /* SFNSObjectViewController.swift */,
 				D3B779ED2023070600A3D11B /* SFNSObjectNavigationController.swift */,
+				D3B779E9202306E700A3D11B /* SFNSObjectViewController.swift */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
